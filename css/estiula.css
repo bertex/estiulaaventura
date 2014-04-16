@@ -1,14 +1,24 @@
 .tot {
-	background-color:#007F0E;
+	.background-color: #007F0E;
+	background: url("../img/fons.png") no-repeat center top;
 	margin-left: auto;
 	margin-right: auto;
-	height: 100%;
+	height: auto;
 	width: 100%;
-	/* position: absolute; */
+	min-height: 100%;
+	min-width: 1024px;
 }
+
 .estiula {
 	max-width: 990px;
 }
+
 .col-centre {
 	background-color: #FFFFFF;
 }
+
+.footer {
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
