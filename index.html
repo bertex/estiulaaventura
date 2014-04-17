@@ -9,6 +9,7 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
+<link rel="import" href="import.html">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -91,16 +92,17 @@
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="index.html">Inici</a></li>
 								<li><a href="#">On Estem i Contacte</a></li>
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-									data-toggle="dropdown">Circuits <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Verd de Baix</a></li>
-										<li><a href="#">Verd de Dalt</a></li>
-										<li><a href="#">Blau</a></li>
-										<li><a href="#">Taronja</a></li>
-										<li><a href="#">Vermell</a></li>
-										<li><a href="#">Negre</a></li>
-									</ul></li>
+								<li><a href="circuits.html">Circuits</a></li>
+<!-- 								<li class="dropdown active"><a href="circuits.html" class="dropdown-toggle" -->
+<!-- 									data-toggle="dropdown">Circuits <b class="caret"></b></a> -->
+<!-- 									<ul class="dropdown-menu"> -->
+<!-- 										<li><a href="#">Verd de Baix</a></li> -->
+<!-- 										<li><a href="#">Verd de Dalt</a></li> -->
+<!-- 										<li><a href="#">Blau</a></li> -->
+<!-- 										<li><a href="#">Taronja</a></li> -->
+<!-- 										<li><a href="#">Vermell</a></li> -->
+<!-- 										<li><a href="#">Negre</a></li> -->
+<!-- 									</ul></li> -->
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown">Serveis <b class="caret"></b></a>
 									<ul class="dropdown-menu">
@@ -190,18 +192,22 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-5">
 					<div class="row-fluid">
-						<a href="#" target="_blank"><img src="img/icons/facebook.png" class="img-responsiv"></a>
-						<a href="#" target="_blank"><img src="img/icons/flickr.png" class="img-responsiv"></a>
-						<a href="#" target="_blank"><img src="img/icons/twitter.png" class="img-responsiv"></a>
-						<a href="#" target="_blank"><img src="img/icons/youtube.png" class="img-responsiv"></a>
+						<a href="#" target="_blank"><img src="img/icons/facebook.png"
+							alt="facebook_icon" class="img-responsiv"></a> <a href="#"
+							target="_blank"><img src="img/icons/flickr.png"
+							alt="flick_icon" class="img-responsiv"></a> <a href="#"
+							target="_blank"><img src="img/icons/twitter.png"
+							alt="twitter_icon" class="img-responsiv"></a> <a href="#"
+							target="_blank"><img src="img/icons/youtube.png"
+							alt="youtube_icon" class="img-responsiv"></a>
 					</div>
 					<div class="row-fluid">
-						<div class="well">
+						<div class="well" id="container">
 							<h2>Últimes Noticies</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-							sed diam dictum, dictum ligula id, pellentesque magna. Nam
-							laoreet risus tellus, ut lacinia eros faucibus sit amet.
-							Suspendisse</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								In sed diam dictum, dictum ligula id, pellentesque magna. Nam
+								laoreet risus tellus, ut lacinia eros faucibus sit amet.
+								Suspendisse</p>
 						</div>
 					</div>
 				</div>
@@ -213,14 +219,20 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
+	<script>
+		var link = document.querySelector('link[rel="import"]');
+		console.log("link",link);
+		// Clone the <template> in the import.
+		var template = link.import.querySelector('template');
+		console.log("template",template);
+		var clone = document.importNode(template.content, true);
+		console.log("clone",clone);
+		document.querySelector('#container').appendChild(clone);
+	</script>
 </body>
 </html>
