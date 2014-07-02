@@ -20,6 +20,17 @@
 	margin-bottom: 0px;
 	float: right;
 }
+#googleMap {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
+}
+.adreca {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
 .socialMedia {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -27,7 +38,7 @@
 /* FOOTER */
 .footer {
 	text-align: center;
-	background-color: #7db5a8;
+	background-color: #49b596;
 	color : #ffffff;
 }
 .footer a {
@@ -42,8 +53,8 @@ margin-bottom: 0px;
 border: 1px solid transparent;
 }
 .navbar-default {
-	background-color: #7db5a8;
-	border-color: #7db5a8;
+	background-color: #49b596;
+	border-color: #49b596;
 }
 
 .navbar-default .navbar-nav>li>a {
