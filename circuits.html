@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="EstiulaAventura">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,11 @@
 <title>Estiula Aventura</title>
 
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,116 +24,38 @@
 <body>
 	<div class="tot">
 		<div class="estiula container-fluid">
-			<div class="row">
-				<header>
-					<img class="img-responsive" src="img/header1.jpg"></img>
-				</header>
-			</div>
-
-			<div class="row">
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle"
-								data-toggle="collapse"
-								data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span> <span
-									class="icon-bar"></span> <span class="icon-bar"></span> <span
-									class="icon-bar"></span>
-							</button>
-							<!-- 						<a class="navbar-brand" href="#">Brand</a> -->
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse"
-							id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li><a href="index.html">Inici</a></li>
-								<li><a href="#">On Estem i Contacte</a></li>
-								<li><a href="circuits.html">Circuits</a></li>
-<!-- 								<li class="dropdown active"><a href="circuits.html" class="dropdown-toggle" -->
-<!-- 									data-toggle="dropdown">Circuits <b class="caret"></b></a> -->
-<!-- 									<ul class="dropdown-menu"> -->
-<!-- 										<li><a href="#">Verd de Baix</a></li> -->
-<!-- 										<li><a href="#">Verd de Dalt</a></li> -->
-<!-- 										<li><a href="#">Blau</a></li> -->
-<!-- 										<li><a href="#">Taronja</a></li> -->
-<!-- 										<li><a href="#">Vermell</a></li> -->
-<!-- 										<li><a href="#">Negre</a></li> -->
-<!-- 									</ul></li> -->
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-									data-toggle="dropdown">Serveis <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Recepció</a></li>
-										<li><a href="#">Bar</a></li>
-										<li><a href="#">WC's Eco</a></li>
-										<li><a href="#">Zona de Relax</a></li>
-										<li><a href="#">Zona Equipament</a></li>
-										<li><a href="#">Pàrquing</a></li>
-										<li><a href="#">Mirador vall de St Llorenç</a></li>
-									</ul></li>
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-									data-toggle="dropdown">Horaris i Preus <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Calendari</a></li>
-										<li><a href="#">Preus Circuits</a></li>
-									</ul></li>
-								<li><a href="galeria.html">Galeria</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Entorn</a></li>
-							</ul>
-						</div>
-						<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container-fluid -->
-				</nav>
-			</div>
+			<div class="row" ng-include="'banner.html'"></div>
+			<div class="row" ng-include="'navigation.html'"></div>
 			<div class="col-centre row">
-			<a href="#test_modal" data-toggle="modal"><img src="img/verd1.png"
-							 class="img-responsiv"></a>
-			<div class="modal fade" id="test_modal" aria-hidden="true" style="display: none;">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-									<h4 class="modal-title">Circuit Verd de Dalt</h4>
-								</div>
-								<div class="modal-body">
-									<p>
-										El circuit verd té 10 jocs i es troba a 1m del terra i les jocs que té són:
-									</p>
-									<ul>
-										<li>una corda</li>
-										<li>una tirolina</li>
-										<li>una pasarel·la</li>
-										<li> ... </li>
-									</ul>
-
-								</div>
-								<div class="modal-footer">
-									<button id="button-avis" type="button" class="btn btn-primary" data-dismiss="modal">Tancar</button>
-								</div>
-							</div>
-						</div>
-					</div>	
-			</div>
-			
-			<div class="row footer">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<p >c/guifre xxxxx | telefon: 93xxxxxxxx | nif :45454545e</p>
+				<div class="col-lg-7 col-md-7 col-sm-7">
+					<div class="row-fluid">
+						
+					</div>
 				</div>
 			</div>
+			<div class="row footer" ng-include="'footer.html'"></div>
 		</div>
 	</div>
-
-
-
-
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-52510623-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>
