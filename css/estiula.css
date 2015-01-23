@@ -52,6 +52,12 @@
 .subratllar {
  text-decoration: underline;
 }
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 
 .col-centre {
 	background: url("../img/fons_text_PORTADA.jpg") no-repeat center top;
