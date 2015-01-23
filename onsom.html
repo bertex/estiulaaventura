@@ -1,67 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="EstiulaAventura">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Estiula Aventura</title>
 
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="css/estiula.css" rel=stylesheet type="text/css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<script
-	src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
-	
-</script>
-
-
-</head>
-<body>
-	<div class="tot">
-		<div class="estiula container-fluid">
-			<div class="row" ng-include="'banner.html'"></div>
-			<div class="row" ng-include="'navigation.html'"></div>
-			<div class="col-centre row">
-				<div class="col-lg-7 col-md-7 col-sm-7">
-					<div class="row-fluid">
-						<img class="img-responsive" src="img/MAPA.png"></img>
-					</div>
-				</div>
-				<div class="col-lg-5 col-md-5 col-sm-5">
-					<div class="row-fluid">
-						<div class="adreca">
-							<p>Carretera (GI-401)</p>
-							<p>de Campdev√†nol a Gombr√®n Km 3</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer" ng-include="'footer.html'"></div>
+<div class="col-centre row">
+	<div class="col-lg-7 col-md-7 col-sm-7">
+		<div class="row-fluid">
+			<img class="img-responsive" src="img/MAPA.png"></img>
 		</div>
 	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script',
-				'//www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-52510623-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-</body>
-</html>
+	<div class="col-lg-5 col-md-5 col-sm-5">
+		<div class="row-fluid">
+			<div class="adreca">
+				<p>Carretera (GI-401)</p>
+				<p>de Campdev‡nol a GombrËn Km 3</p>
+			</div>
+		</div>
+	</div>
+</div>
