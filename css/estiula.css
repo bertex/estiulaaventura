@@ -28,7 +28,7 @@
 
 	background-image:url('../img/fons_ARBRE_GRAN.jpg');
     background-repeat:no-repeat;
-    background-size:initial;
+    background-size:contain;
     background-position:center;
 }
 .row {
@@ -57,6 +57,21 @@
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+
+.activitats {
+	padding: 25px;
+}
+.left {
+	float:left;
+}
+.circuitLP1 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.circuitLP2 {
+	padding-left: 90px;
+	padding-right: 50px;
 }
 
 .col-centre {
