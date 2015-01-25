@@ -65,13 +65,9 @@
 .left {
 	float:left;
 }
-.circuitLP1 {
+.circuits {
 	padding-left: 5px;
 	padding-right: 5px;
-}
-.circuitLP2 {
-	padding-left: 90px;
-	padding-right: 50px;
 }
 
 .col-centre {
