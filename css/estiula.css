@@ -31,6 +31,14 @@
     background-size:contain;
     background-position:center;
 }
+
+.petit {
+	background-image:url('../img/fons_ARBRES_PETIT.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
 .row {
 	margin-left: 0px;
 	margin-right: 0px;
