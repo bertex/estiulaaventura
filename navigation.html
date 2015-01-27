@@ -13,7 +13,7 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="taronja nav navbar-nav">
+			<ul class="uppercase taronja nav navbar-nav">
 				<li class="dropdown"><a href class="dropdown-toggle taronja"
 					data-toggle="dropdown">Inici <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
@@ -26,8 +26,14 @@
 					</ul></li>
 				<li ng-class="{ active:tab.isSet(8)}" ><a ng-click="tab.setTab(8)" href>Circuits</a></li>
 				<li ng-class="{ active:tab.isSet(9)}" ><a ng-click="tab.setTab(9)" href>Activitats</a></li>
-				<li ng-class="{ active:tab.isSet(10)}"><a ng-click="tab.setTab(10)" href>Tarifes</a></li>
-				<li ng-class="{ active:tab.isSet(11)}"><a ng-click="tab.setTab(11)" href>Horaris</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" 
+					data-toggle="dropdown"> Tarifes/horaris<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li ng-class="{ active:tab.isSet(10)}"><a ng-click="tab.setTab(10)" href>Horaris i Calendari 2015</a></li>
+						<li ng-class="{ active:tab.isSet(11)}"><a ng-click="tab.setTab(11)" href>Tarifes</a></li>
+						<li ng-class="{ active:tab.isSet(12)}"><a ng-click="tab.setTab(12)" href>Tiquet Regal</a></li>
+				</ul></li>
+<!-- 				<li ng-class="{ active:tab.isSet(11)}"><a ng-click="tab.setTab(11)" href>Horaris</a></li> -->
 <!-- 				<li class="dropdown"><a href="#" class="dropdown-toggle" -->
 <!-- 					data-toggle="dropdown">Galeria <span class="caret"></span></a> -->
 <!-- 					<ul class="dropdown-menu" role="menu"> -->
@@ -38,7 +44,7 @@
 <!-- 						<li ng-class="{ active:tab.isSet(16)}"><a ng-click="tab.setTab(16)" href>Serveis</a></li> -->
 <!-- 						<li ng-class="{ active:tab.isSet(17)}"><a ng-click="tab.setTab(17)" href>Vídeo</a></li> -->
 <!-- 					</ul></li> -->
-				<li ng-class="{ active:tab.isSet(18)}" ><a ng-click="tab.setTab(18)" href>Contacte</a></li>
+<!-- 				<li ng-class="{ active:tab.isSet(18)}" ><a ng-click="tab.setTab(18)" href>Contacte</a></li> -->
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
@@ -53,14 +59,14 @@
 	<div class="col-centre row" ng-show="tab.isSet(7)" ng-include="'faq.html'"></div>	
 	<div class="col-centre row" ng-show="tab.isSet(8)" ng-include="'circuits.html'"></div>
 	<div class="col-centre row" ng-show="tab.isSet(9)" ng-include="'activitats.html'"></div>
-	<div class="col-centre row" ng-show="tab.isSet(10)"	ng-include="'tarifes.html'"></div>
-	<div class="col-centre row" ng-show="tab.isSet(11)"	ng-include="'horaris.html'"></div>
-<!-- 	<div class="col-centre row" ng-show="tab.isSet(12)"	ng-include="'galeria_ENT.html'"></div> -->
+	<div class="col-centre row" ng-show="tab.isSet(10)"	ng-include="'horaris.html'"></div>
+	<div class="col-centre row" ng-show="tab.isSet(11)"	ng-include="'tarifes.html'"></div>
+	<div class="col-centre row" ng-show="tab.isSet(12)"	ng-include="'tiquetRegal.html'"></div>
 <!-- 	<div class="col-centre row" ng-show="tab.isSet(13)"	ng-include="'galeria_CB.html'"></div> -->
 <!-- 	<div class="col-centre row" ng-show="tab.isSet(14)"	ng-include="'galeria_CT.html'"></div> -->
 <!-- 	<div class="col-centre row" ng-show="tab.isSet(15)"	ng-include="'galeria_CV.html'"></div> -->
 <!-- 	<div class="col-centre row" ng-show="tab.isSet(16)"	ng-include="'galeria_SRV.html'"></div> -->
 <!-- 	<div class="col-centre row" ng-show="tab.isSet(17)"	ng-include="'galeria1.html'"></div> -->
-	<div class="col-centre row" ng-show="tab.isSet(18)"	ng-include="'contacte.html'"></div>
+<!-- 	<div class="col-centre row" ng-show="tab.isSet(18)"	ng-include="'contacte.html'"></div> -->
 	<div class="col-centre row" ng-show="tab.isSet(19)"	ng-include="'escoles.html'"></div>
 </nav>
