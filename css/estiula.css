@@ -70,6 +70,10 @@
 .activitats {
 	padding: 25px;
 }
+.activitatsMain {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .left {
 	float:left;
 }
