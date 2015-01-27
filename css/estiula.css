@@ -13,6 +13,7 @@
 }
 .swiss {
 	font-family: swiss;
+	font-size: 21px;
 }
 .brady {
 	font-family: BradBun;
@@ -23,7 +24,9 @@
 
 
 /* CSS Style */
-
+.uppercase {
+	text-transform: uppercase;
+}
 /* Fons Web  i amplades */ 
 .estiula {
 	max-width: 990px;
@@ -38,7 +41,7 @@
 }
 
 .petit {
-	background:url('../img/fons_ARBRES_PETIT.jpg') no-repeat top center;
+	background:url('../img/fons_petit.jpg') no-repeat top center;
 }
 .row {
 	margin-left: 0px;
@@ -67,9 +70,6 @@
 }
 .left {
 	float:left;
-}
-.uppercase {
-	text-transform: uppercase;
 }
 .circuits {
 	padding-left: 5px;
