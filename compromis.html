@@ -1,98 +1,153 @@
-<div class="col-centre row">
-	<img class="img-responsive" src="img/inici/titol/titol_COMPROMIS_ECO.jpg">
-	<div class="col-lg-10 col-md-10 col-sm-10">
-		<div class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstiulAventura</title>
 
-			<p class="swiss">
-				ESTIULAVENTURA &eacute;s una empresa que ofereix oci i
-				diversi&oacute; al visitant , mitjan&ccedil;ant una activitat que a
-				part de practicar esport refor&ccedil;a molts valors positius com
-				s&oacute;n el <strong>coratge, la superaci&oacute;
-					personal, la confian&ccedil;a i l&#39;autoestima en un mateix,
-					l&#39;agilitat, l&#39;equilibri, el companyerisme</strong>,... per&ograve; a
-				part de l&#39;activitat acrob&agrave;tica en si per damunt dels
-				arbres, ESTIULAVENTURA es vol mostrar al visitant com una empresa
-				respectuosa amb el medi natural i compatible amb la vida rural en
-				que es troba envoltada.
-			</p>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/estiula.css" rel=stylesheet type="text/css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 
-			<p class="swiss">
-				Per aquests motius la nostra empresa ha apostat per ser una empresa
-				<strong><u>ECOL&Ograve;GICA i SOSTENIBLE</u></strong>.
-			</p>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-			<p class="brady">
-				<strong><u>PERQU&Egrave; ECOL&Ograve;GICA?</u></strong>
-			</p>
-			<ul class="swiss">
-				<li><strong>WC ECOL&Ograve;GICS</strong> en que els
-					l&iacute;quids despr&eacute;s de separar-se dels s&ograve;lids es
-					drenen en les pastures immediates on tenim les
-					instal&middot;lacions despr&eacute;s de passar tamb&eacute; per uns
-					rajos infrarojos on s&#39;eliminen els residus contaminants i els
-					s&ograve;lids es dipositen en un c&agrave;mera on es genera un
-					compost.</li>
+</head>
+<body ng-app="EstiulaAventura" ng-controller="TabController as tab">
+	<div class="tot" ng-class="tab.background">
+		<div class="estiula container-fluid">
+			<div class="row" ng-include="'banner.html'"></div>
+			<div class="row" ng-init="tab.setTab(6)"
+				ng-include="'navigation.html'"></div>
+			<div class="col-centre row">
+				<img class="img-responsive"
+					src="img/inici/titol/titol_COMPROMIS_ECO.jpg">
+				<div class="col-lg-7 col-md-7 col-sm-7">
+					<div
+						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
 
-				<li><strong>PLAQUES SOLARS</strong> en la captaci&oacute; de
-					rajos solars per generar energia el&egrave;ctrica pels
-					electrodom&egrave;stics de que disposem en les nostres
-					instal&middot;lacions.</li>
-				<li><strong>BATERIES</strong>on s&#39;emmagatzema l&#39;energia
-					el&egrave;ctrica produ&iuml;da per les plaques solars per utilitzar
-					posteriorment en els aparells el&egrave;ctrics.</li>
+						<p class="swiss">
+							ESTIULAVENTURA &eacute;s una empresa que ofereix oci i
+							diversi&oacute; al visitant , mitjan&ccedil;ant una activitat que
+							a part de practicar esport refor&ccedil;a molts valors positius
+							com s&oacute;n el <strong>coratge, la superaci&oacute;
+								personal, la confian&ccedil;a i l&#39;autoestima en un mateix,
+								l&#39;agilitat, l&#39;equilibri, el companyerisme</strong>,...
+							per&ograve; a part de l&#39;activitat acrob&agrave;tica en si per
+							damunt dels arbres, ESTIULAVENTURA es vol mostrar al visitant com
+							una empresa respectuosa amb el medi natural i compatible amb la
+							vida rural en que es troba envoltada.
+						</p>
 
-				<li><strong>AIGUA DE FONT</strong> en la captaci&oacute;
-					d&#39;aigua per les nostres instal&middot;lacions degudament
-					tractada.</li>
+						<p class="swiss">
+							Per aquests motius la nostra empresa ha apostat per ser una
+							empresa <strong><u>ECOL&Ograve;GICA i SOSTENIBLE</u></strong>.
+						</p>
 
-				<li><strong>PRODUCTES ECOL&Ograve;GICS</strong> utilitzats en
-					la neteja i manteniment del parc com en la construcció dels
-					circuits.</li>
-			</ul>
+						<p class="brady">
+							<strong><u>PERQU&Egrave; ECOL&Ograve;GICA?</u></strong>
+						</p>
+						<ul class="swiss">
+							<li><strong>WC ECOL&Ograve;GICS</strong> en que els
+								l&iacute;quids despr&eacute;s de separar-se dels s&ograve;lids
+								es drenen en les pastures immediates on tenim les
+								instal&middot;lacions despr&eacute;s de passar tamb&eacute; per
+								uns rajos infrarojos on s&#39;eliminen els residus contaminants
+								i els s&ograve;lids es dipositen en un c&agrave;mera on es
+								genera un compost.</li>
 
-			<p class="brady">
-				<strong><u>PERQU&Egrave; SOSTENIBLE?</u></strong>
-			</p>
+							<li><strong>PLAQUES SOLARS</strong> en la captaci&oacute; de
+								rajos solars per generar energia el&egrave;ctrica pels
+								electrodom&egrave;stics de que disposem en les nostres
+								instal&middot;lacions.</li>
+							<li><strong>BATERIES</strong>on s&#39;emmagatzema
+								l&#39;energia el&egrave;ctrica produ&iuml;da per les plaques
+								solars per utilitzar posteriorment en els aparells
+								el&egrave;ctrics.</li>
 
-			<ul class="swiss">
-				<li><strong>COMPARTIM PASTURA</strong> amb ovelles en les
-					nostres instal&middot;lacions tal com s&#39;efectuava abans en la
-					ubicaci&oacute; dels terrenys on est&agrave; el parc
-					d&#39;aventura.</li>
+							<li><strong>AIGUA DE FONT</strong> en la captaci&oacute;
+								d&#39;aigua per les nostres instal&middot;lacions degudament
+								tractada.</li>
 
-				<li><strong>L&#39;EXTRACCI&Oacute; DE FUSTA</strong> del bosc
-					es continua produint tal com s&#39;extreia amb anterioritat a la
-					nostra arribada.</li>
+							<li><strong>PRODUCTES ECOL&Ograve;GICS</strong> utilitzats
+								en la neteja i manteniment del parc com en la construcció dels
+								circuits.</li>
+						</ul>
 
-				<li><strong>L&#39;APROFITAMENT DE BOLETS</strong> del bosc i
-					terrenys adjacents es segueix produint tot i les nostres
-					instal&middot;lacions i l&#39;activitat que es du a terme.</li>
+						<p class="brady">
+							<strong><u>PERQU&Egrave; SOSTENIBLE?</u></strong>
+						</p>
 
-				<li><strong>L&#39;APROFITAMENT DE L&#39;HERBA</strong> dels
-					prats de les nostres instal&middot;lacions s&#39;aprofiten tot i
-					l&#39;&uacute;s i el funcionament de les nostra activitat.</li>
-			</ul>
+						<ul class="swiss">
+							<li><strong>COMPARTIM PASTURA</strong> amb ovelles en les
+								nostres instal&middot;lacions tal com s&#39;efectuava abans en
+								la ubicaci&oacute; dels terrenys on est&agrave; el parc
+								d&#39;aventura.</li>
+
+							<li><strong>L&#39;EXTRACCI&Oacute; DE FUSTA</strong> del
+								bosc es continua produint tal com s&#39;extreia amb anterioritat
+								a la nostra arribada.</li>
+
+							<li><strong>L&#39;APROFITAMENT DE BOLETS</strong> del bosc i
+								terrenys adjacents es segueix produint tot i les nostres
+								instal&middot;lacions i l&#39;activitat que es du a terme.</li>
+
+							<li><strong>L&#39;APROFITAMENT DE L&#39;HERBA</strong> dels
+								prats de les nostres instal&middot;lacions s&#39;aprofiten tot i
+								l&#39;&uacute;s i el funcionament de les nostra activitat.</li>
+						</ul>
 
 
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5">
+					<div class="row-fluid ">
+
+
+						<img class="img-responsive" src="img/inici/bateriesweb.jpg">
+						<img class="img-responsive" src="img/inici/compostweb.jpg">
+						<img class="img-responsive" src="img/inici/lavabosweb.jpg">
+						<img class="img-responsive" src="img/inici/plaquesweb.jpg">
+						<img class="img-responsive" src="img/inici/ovellaweb.jpg"> 
+						<img class="img-responsive" src="img/inici/aprofherba.jpg"> 
+						<img class="img-responsive" src="img/inici/extracfustaweb.jpg">
+						<img class="img-responsive" src="img/inici/boletweb.jpg">
+
+					</div>
+
+				</div>
+			</div>
+			<div class="row footer" ng-include="'footer.html'"></div>
 		</div>
 	</div>
-	<div class="col-lg-5 col-md-5 col-sm-5">
-		<div class="row-fluid ">
-		
-		
-		<img class="img-responsive" src ="img/inici/bateriesweb.jpg">
-		<img class="img-responsive" src ="img/inici/compostweb.jpg">
-		<img class="img-responsive" src ="img/inici/lavabosweb.jpg">
-		<img class="img-responsive" src ="img/inici/plaquesweb.jpg">
-		<img class="img-responsive" src ="img/inici/ovellaweb.jpg">
-		<img class="img-responsive" src ="img/inici/aprofherba.jpg">
-		<img class="img-responsive" src ="img/inici/extracfustaweb.jpg">
-		<img class="img-responsive" src ="img/inici/boletweb.jpg">
-		
-		</div>
-		
-	</div>
-</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
 
-
-
+		ga('create', 'UA-52510623-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

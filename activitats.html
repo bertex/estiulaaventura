@@ -1,39 +1,94 @@
-<div class="col-centre row">
-	<img class="img-responsive"
-		src="img/activitats/titols/titol_ACTIVITATS.jpg">
-	<div class="col-lg-12 col-md-12 col-sm-12">
-		<div class="row-fluid"></div>
-		<table class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
-			<tr>
-				<th>
-					<h4 class="center">Escoles</h4>
-				</th>
-				<th>
-					<h4 class="center">Festes Aniversari</h4>
-				</th>
-			</tr>
-			<tr>
-				<td class="activitatsMain"><a href ng-click="tab.setTab(19)"><img
-						class="img-responsive" src="img/activitats/link_escoles.jpg"></a></td>
-				<td class="activitatsMain"><img class=" img-responsive"
-					src="img/activitats/link_ Festes.jpg"></td>
-			</tr>
-		</table>
-		<table class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
-			<tr>
-				<th>
-					<h4 class="center">Empreses</h4>
-				</th>
-				<th>
-					<h4 class="center">Comiats de Solter</h4>
-				</th>
-			<tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstiulAventura</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/estiula.css" rel=stylesheet type="text/css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body ng-app="EstiulaAventura" ng-controller="TabController as tab">
+	<div class="tot" ng-class="tab.background">
+		<div class="estiula container-fluid">
+			<div class="row" ng-include="'banner.html'"></div>
+			<div class="row" ng-init="tab.setTab(9)"
+				ng-include="'navigation.html'"></div>
+			<div class="col-centre row">
+				<img class="img-responsive"
+					src="img/activitats/titols/titol_ACTIVITATS.jpg">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="row-fluid"></div>
+					<table class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+						<tr>
+							<th>
+								<h4 class="center">Escoles</h4>
+							</th>
+							<th>
+								<h4 class="center">Festes Aniversari</h4>
+							</th>
+						</tr>
+						<tr>
+							<td class="activitatsMain"><a href="escoles.html" ng-click="tab.setTab(19)"><img
+									class="img-responsive" src="img/activitats/link_escoles.jpg"></a></td>
+							<td class="activitatsMain"><img class=" img-responsive"
+								src="img/activitats/link_ Festes.jpg"></td>
+						</tr>
+					</table>
+					<table class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+						<tr>
+							<th>
+								<h4 class="center">Empreses</h4>
+							</th>
+							<th>
+								<h4 class="center">Comiats de Solter</h4>
+							</th>
+							<tr>
+				<td class="activitatsMain"><a href="empreses.html" ng-click="tab.setTab(20)"><img class="img-responsive"
+								src="img/activitats/link_Empreses.jpg"></a></td>
 				<td class="activitatsMain"><img class="img-responsive"
-					src="img/activitats/link_Empreses.jpg"></td>
-				<td class="activitatsMain"><img class="img-responsive"
-					src="img/activitats/link_comiats_de_solter.jpg"></td>
+								src="img/activitats/link_comiats_de_solter.jpg"></td>
 			</tr>
 		</table>
 		<img class="center img-responsive" src="img/activitats/Bannereco.jpg">
 	</div>
 </div>
+			<div class="row footer" ng-include="'footer.html'"></div></di
+						v>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-52510623-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
