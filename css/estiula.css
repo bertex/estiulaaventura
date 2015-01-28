@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: swiss;
-    src: url('../fonts/swiss.ttf');
+    src: url('../fonts/swissc.ttf');
 }
 @font-face {
     font-family: WC_RoughTrad;
@@ -17,9 +17,11 @@
 }
 .brady {
 	font-family: BradBun;
+	font-size: 21px;
 }
 .WC {
 	font-family: WC_RoughTrad;
+	font-size: 21px;
 }
 
 
@@ -111,6 +113,21 @@ font-family:WC_RoughTrad;
 
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus
 	{
-	color: #555;
-	background-color: #ffffff;
+	color: black;
+	background-color: #CD5D2B;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+	background-color: #CD5D2B;
+	color: #black;
+}
+.dropdown-menu>li>a {
+display: block;
+padding: 3px 20px;
+clear: both;
+font-weight: 400;
+line-height: 1.42857143;
+color: #CD5D2B;
+white-space: nowrap;
 }

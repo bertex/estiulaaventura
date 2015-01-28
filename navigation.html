@@ -24,14 +24,14 @@
 						<li ng-class="{ active:tab.isSet(6)}" ><a ng-click="tab.setTab(6)" href>Comprom&iacute;s ecol&ograve;gic</a></li>
 						<li ng-class="{ active:tab.isSet(7)}" ><a ng-click="tab.setTab(7)" href>Pregutnes Freq&uuml;ents</a></li>
 					</ul></li>
-				<li ng-class="{ active:tab.isSet(8)}" ><a ng-click="tab.setTab(8)" href>Circuits</a></li>
+				<li ng-class="{ active:tab.isSet(8)}" ><a ng-click="tab.setTab(8)" href="circuits.html">Circuits</a></li>
 				<li ng-class="{ active:tab.isSet(9)}" ><a ng-click="tab.setTab(9)" href>Activitats</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" 
 					data-toggle="dropdown"> Tarifes/horaris<span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
 						<li ng-class="{ active:tab.isSet(10)}"><a ng-click="tab.setTab(10)" href>Horaris i Calendari 2015</a></li>
 						<li ng-class="{ active:tab.isSet(11)}"><a ng-click="tab.setTab(11)" href>Tarifes</a></li>
-						<li ng-class="{ active:tab.isSet(12)}"><a ng-click="tab.setTab(12)" href>Tiquet Refal</a></li>
+						<li ng-class="{ active:tab.isSet(12)}"><a ng-click="tab.setTab(12)" href>Tiquet Regal</a></li>
 				</ul></li>
 <!-- 				<li ng-class="{ active:tab.isSet(11)}"><a ng-click="tab.setTab(11)" href>Horaris</a></li> -->
 <!-- 				<li class="dropdown"><a href="#" class="dropdown-toggle" -->
@@ -57,7 +57,7 @@
 	<div class="col-centre row" ng-show="tab.isSet(5)" ng-include="'seguretat.html'"></div>
 	<div class="col-centre row" ng-show="tab.isSet(6)" ng-include="'compromis.html'"></div>
 	<div class="col-centre row" ng-show="tab.isSet(7)" ng-include="'faq.html'"></div>	
-	<div class="col-centre row" ng-show="tab.isSet(8)" ng-include="'circuits.html'"></div>
+<!-- 	<div class="col-centre row" ng-show="tab.isSet(8)" ng-include="'circuits.html'"></div> -->
 	<div class="col-centre row" ng-show="tab.isSet(9)" ng-include="'activitats.html'"></div>
 	<div class="col-centre row" ng-show="tab.isSet(10)"	ng-include="'horaris.html'"></div>
 	<div class="col-centre row" ng-show="tab.isSet(11)"	ng-include="'tarifes.html'"></div>
