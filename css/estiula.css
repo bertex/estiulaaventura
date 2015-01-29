@@ -11,6 +11,11 @@
     font-family: WC_RoughTrad;
     src: url('../fonts/WC_RoughTrad.ttf');
 }
+@font-face {
+    font-family: BlackMetalSans;
+    src: url('../fonts/BlackMetalSans.ttf');
+}
+
 .swiss {
 	font-family: swiss;
 	font-size: 21px;
@@ -23,9 +28,16 @@
 	font-family: WC_RoughTrad;
 	font-size: 21px;
 }
+.blackMetal {
+	font-family: WC_RoughTrad;
+	font-size: 21px;
+}
 
 
 /* CSS Style */
+a, a:hover, a:focus{
+	color:#CD5D2B;
+}
 .uppercase {
 	text-transform: uppercase;
 }

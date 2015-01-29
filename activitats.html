@@ -25,14 +25,15 @@
 	<div class="tot" ng-class="tab.background">
 		<div class="estiula container-fluid">
 			<div class="row" ng-include="'banner.html'"></div>
-			<div class="row" ng-init="tab.setTab(9)"
+			<div class="row" ng-init="tab.setTab(14)"
 				ng-include="'navigation.html'"></div>
 			<div class="col-centre row">
 				<img class="img-responsive"
 					src="img/activitats/titols/titol_ACTIVITATS.jpg">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="row-fluid"></div>
-					<table class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+					<table
+						class="table-responsive col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
 						<tr>
 							<th>
 								<h4 class="center">Escoles</h4>
@@ -42,13 +43,14 @@
 							</th>
 						</tr>
 						<tr>
-							<td class="activitatsMain"><a href="escoles.html" ng-click="tab.setTab(19)"><img
+							<td class="activitatsMain"><a href="escoles.html"><img
 									class="img-responsive" src="img/activitats/link_escoles.jpg"></a></td>
-							<td class="activitatsMain"><img class=" img-responsive"
-								src="img/activitats/link_ Festes.jpg"></td>
+							<td class="activitatsMain"><a href="festes.html"><img
+									class=" img-responsive" src="img/activitats/link_Festes.jpg"></a></td>
 						</tr>
 					</table>
-					<table class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+					<table
+						class="table-responsive col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
 						<tr>
 							<th>
 								<h4 class="center">Empreses</h4>
@@ -56,17 +58,20 @@
 							<th>
 								<h4 class="center">Comiats de Solter</h4>
 							</th>
-							<tr>
-				<td class="activitatsMain"><a href="empreses.html" ng-click="tab.setTab(20)"><img class="img-responsive"
-								src="img/activitats/link_Empreses.jpg"></a></td>
-				<td class="activitatsMain"><img class="img-responsive"
-								src="img/activitats/link_comiats_de_solter.jpg"></td>
-			</tr>
-		</table>
-		<img class="center img-responsive" src="img/activitats/Bannereco.jpg">
-	</div>
-</div>
-			<div class="row " ng-include="'footer.html'"></div></div>
+						<tr>
+							<td class="activitatsMain"><a href="empreses.html"><img
+									class="img-responsive" src="img/activitats/link_Empreses.jpg"></a></td>
+							<td class="activitatsMain"><a href="comiats.html"><img
+									class="img-responsive"
+									src="img/activitats/link_comiats_de_solter.jpg"></a></td>
+						</tr>
+					</table>
+					<a href="compromis.html"><img class="center img-responsive"
+						src="img/activitats/Bannereco.jpg"></a>
+				</div>
+			</div>
+			<div class="row " ng-include="'footer.html'"></div>
+		</div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script
