@@ -15,6 +15,10 @@
     font-family: BlackMetalSans;
     src: url('../fonts/BlackMetalSans.ttf');
 }
+@font-face {
+    font-family: Timoteo;
+    src: url('../fonts/Timoteo.ttf');
+}
 
 .swiss {
 	font-family: swiss;
@@ -30,6 +34,10 @@
 }
 .blackMetal {
 	font-family: WC_RoughTrad;
+	font-size: 21px;
+}
+.timoteo {
+	font-family: Timoteo;
 	font-size: 21px;
 }
 
