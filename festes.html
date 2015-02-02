@@ -22,14 +22,11 @@
 
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
-	<div  back-img="{{tab.background}}">
+	<div back-img="{{tab.background}}">
 		<div class="estiula container-fluid">
 			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
-			<div back-img="{{tab.banner}}">
-				<div class="row" ng-init="tab.setTab(16)"
-					ng-include="'navigation.html'"></div>
-			</div>
-				<img class="img-responsive"
+			<div ng-init="tab.setTab(16)" ng-include="'navigation.html'"></div>
+			<img class="img-responsive"
 				src="img/gallery/activitats/banner_festes_aniv.jpg">
 			<div class="col-centre row">
 				<img class="img-responsive"
@@ -54,12 +51,14 @@
 
 						<p class="blackMetal">Veniu i gaudiu d&#39;un dia inoblidable
 							en plena natura !</p>
-						<p class="taronja swiss">Demaneu-nos pressupost i segur que
-							trobarem una proposta al vostre gust i ajustada a les vostres
-							necessitats.</p>
+						<p class="taronja swiss">
+							<strong>Demaneu-nos pressupost i segur que trobarem una
+								proposta al vostre gust i ajustada a les vostres necessitats.</strong>
+						</p>
 
 						<p class="brady taronja">
-							<a href="onsom.html">CONTACTEU AMB NOSALTRES!</a>
+							<a href="onsom.html"><strong>CONTACTEU AMB
+									NOSALTRES!</strong></a>
 						</p>
 					</div>
 				</div>

@@ -22,13 +22,10 @@
 
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
-	<div  back-img="{{tab.background}}">
+	<div back-img="{{tab.background}}">
 		<div class="estiula container-fluid">
 			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
-			<div back-img="{{tab.banner}}">
-				<div class="row" ng-init="tab.setTab(19)"
-					ng-include="'navigation.html'"></div>
-			</div>
+			<div ng-init="tab.setTab(19)" ng-include="'navigation.html'"></div>
 			<div class="col-centre row">
 				<img class="img-responsive"
 					src="img/tarifes/titols/titol_HORARIS_CALEND.jpg">
@@ -49,8 +46,9 @@
 						<tr>
 							<td class="activitatsMain"><a href="escoles.html"><img
 									class="img-responsive" src="img/tarifes/banner_escoles .jpg"></a></td>
-							<td class="activitatsMain"><a href="festes.html"><img class=" img-responsive"
-								src="img/tarifes/banner_festes_aniversari.jpg"></a></td>
+							<td class="activitatsMain"><a href="festes.html"><img
+									class=" img-responsive"
+									src="img/tarifes/banner_festes_aniversari.jpg"></a></td>
 						</tr>
 					</table>
 				</div>

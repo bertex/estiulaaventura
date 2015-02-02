@@ -1,9 +1,5 @@
 /* FONT */
 @font-face {
-    font-family: BradBun;
-    src: url('../fonts/BradBunR.ttf');
-}
-@font-face {
     font-family: swiss;
     src: url('../fonts/swissc.ttf');
 }
@@ -19,13 +15,17 @@
     font-family: Timoteo;
     src: url('../fonts/Timoteo.ttf');
 }
+@font-face {
+    font-family: BradBunR;
+    src: url('../fonts/BradBunR.ttf');
+}
 
 .swiss {
 	font-family: swiss;
 	font-size: 21px;
 }
 .brady {
-	font-family: BradBun;
+	font-family: BradBunR;
 	font-size: 21px;
 }
 .WC {
@@ -33,7 +33,7 @@
 	font-size: 21px;
 }
 .blackMetal {
-	font-family: WC_RoughTrad;
+	font-family: BlackMetalSans;
 	font-size: 21px;
 }
 .timoteo {

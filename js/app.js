@@ -25,11 +25,23 @@
 	    };
 	  });
   
+  app.directive('bannerImg', function(){
+	    return function(scope, element, attrs){
+	        attrs.$observe('bannerImg', function(value) {
+	            element.css({
+	                'background-image': 'url(' + value +')',
+	                'background-size' : '100%',
+	                'background-repeat' : 'no-repeat',
+	                'background-position' : 'top center'
+	            });
+	        });
+	    };
+	});
   app.directive('backImg', function(){
 	    return function(scope, element, attrs){
 	        attrs.$observe('backImg', function(value) {
 	            element.css({
-	                'background': 'url(' + value +') no-repeat top center'
+	            	'background': 'url(' + value+ ') no-repeat center top'
 	            });
 	        });
 	    };

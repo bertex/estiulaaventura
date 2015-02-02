@@ -25,64 +25,61 @@
 	<div back-img="{{tab.background}}">
 		<div class="estiula container-fluid">
 			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
-			<div back-img="{{tab.banner}}">
-				<div class="row" ng-init="tab.setTab(21)"
-					ng-include="'navigation.html'"></div>
-			</div>
+			<div ng-init="tab.setTab(21)" ng-include="'navigation.html'"></div>
 			<div class="col-centre row">
 				<img class="img-responsive"
 					src="img/tarifes/titols/titol_TIQUET_REGAL.jpg">
 				<div class="col-lg-10 col-md-10 col-sm-10">
 					<div
 						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-					<p class="blackMetal">Vols fer un regal original ?, regala
-						aventura !</p>
+						<p class="blackMetal">Vols fer un regal original ?, regala
+							aventura !</p>
 
-					<p class="swiss">
-						Estiulaventura ofereix l&#39;opci&oacute; de &#39; ticket regal
-						&#39; en qualsevol dels <a href="tarifes.html">nostres
-							productes</a> Tan sols has de posar-te en contacte amb nosaltres i
-						t&#39;enviem el regal per correu electr&ograve;nic.
-					</p>
+						<p class="swiss">
+							Estiulaventura ofereix l&#39;opci&oacute; de &#39; ticket regal
+							&#39; en qualsevol dels <a href="tarifes.html">nostres
+								productes</a> Tan sols has de posar-te en contacte amb nosaltres i
+							t&#39;enviem el regal per correu electr&ograve;nic.
+						</p>
 
-					<p class="blackMetal">Vols fer un super-regal?, regala un bonus
-						d&#39;aventura !!</p>
+						<p class="blackMetal">Vols fer un super-regal?, regala un
+							bonus d&#39;aventura !!</p>
 
-					<p class="swiss">Pots regalar des d&#39;una fins a 10
-						repeticions en activitat a ESTIULAVENTURA.</p>
-					<p class="swiss">Tria l&#39;opci&oacute; que vulguis i te
-						l&#39;enviem a casa.</p>
-					<p class="brady taronja">
-						<a href="onsom.html">CONTACTEU AMB NOSALTRES!</a>
-					</p>
+						<p class="swiss">Pots regalar des d&#39;una fins a 10
+							repeticions en activitat a ESTIULAVENTURA.</p>
+						<p class="swiss">Tria l&#39;opci&oacute; que vulguis i te
+							l&#39;enviem a casa.</p>
+						<p class="brady taronja">
+							<a href="onsom.html">CONTACTEU AMB NOSALTRES!</a>
+						</p>
 
-					<img class="img-responsive center"
-						src="img/tarifes/bonus_regal.jpg">
+						<img class="img-responsive center"
+							src="img/tarifes/bonus_regal.jpg">
+					</div>
 				</div>
+				<div class="row " ng-include="'footer.html'"></div>
 			</div>
-			<div class="row " ng-include="'footer.html'"></div>
 		</div>
-	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
-	<script>
-		(function(i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function() {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script',
-				'//www.google-analytics.com/analytics.js', 'ga');
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
+		<script>
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script',
+					'//www.google-analytics.com/analytics.js', 'ga');
 
-		ga('create', 'UA-52510623-1', 'auto');
-		ga('send', 'pageview');
-	</script>
+			ga('create', 'UA-52510623-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 </body>
 </html>
