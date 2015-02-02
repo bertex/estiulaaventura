@@ -6,10 +6,6 @@
 	    this.background = "img/fons_petit.jpg";
 	    this.banner = "img/banner_fons_petit.jpg";
 
-	    this.isSet = function(checkTab) {
-	      return this.tab === checkTab;
-	    };
-	    
 	    this.setTab = function(setTab) {
 	      this.tab = setTab;
 	      if ((setTab==1)||(setTab==7)) {
@@ -37,6 +33,7 @@
 	        });
 	    };
 	});
+  
   app.directive('backImg', function(){
 	    return function(scope, element, attrs){
 	        attrs.$observe('backImg', function(value) {
