@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,33 +22,42 @@
 
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
-	<div class="tot" ng-class="tab.background"> 
+	<div  back-img="{{tab.background}}">
 		<div class="estiula container-fluid">
-			<div class="row"g-init="" ng-include="'banner.html'"></div>
-			<div class="row" ng-init="tab.setTab(4)" ng-include="'navigation.html'"></div>
-<div class="col-centre row">
-	<img class="img-responsive" src="img/inici/titol/titol_ON_SOM.jpg">
-	<div class="col-lg-10 col-md-10 col-sm-10">
-		<div class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1 ">
-			<p class="swiss">ESTIULAVENTURA es troba en la preciosa vall de
-				Sant Lloren&ccedil; del terme municipal de <strong>Campdev&agrave;nol</strong> en ben
-				mig dels Pre-Pirineus orientals i arribar és molt senzill:</p>
+			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
+			<div back-img="{{tab.banner}}">
+				<div class="row" ng-init="tab.setTab(4)"
+					ng-include="'navigation.html'"></div>
+			</div>
+			<div class="col-centre row">
+				<img class="img-responsive" src="img/inici/titol/titol_ON_SOM.jpg">
+				<div class="col-lg-10 col-md-10 col-sm-10">
+					<div
+						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1 ">
+						<p class="swiss">
+							ESTIULAVENTURA es troba en la preciosa vall de Sant
+							Lloren&ccedil; del terme municipal de <strong>Campdev&agrave;nol</strong>
+							en ben mig dels Pre-Pirineus orientals i arribar és molt senzill:
+						</p>
 
-			<p class="swiss">L&#39;itinerari m&eacute;s usat &eacute;s passar
-				per RIPOLL i agafar la <strong>N-260 en direcci&oacute; Campdev&agrave;nol /
-				Puigcerd&agrave;</strong>, a 3 km arribarem a CAMPDEV&Agrave;NOL i haurem de
-				girar a l&#39;esquerre i agafar la <strong>carretera GI-401</strong> en
-				direcci&oacute; <strong>Gombr&egrave;n</strong>/ La Pobla de Lillet. Passat el
-				c&agrave;mping Pirinenc (<strong>Km 3</strong>) trobarem un trencant a l&#39;esquerre que
-				l&#39;haurem d&#39;agafar (<strong>TORRENT DE LA CABANA</strong>), a 100 m (segona curva) es
-				troba el nostre p&agrave;rquing.</p>
+						<p class="swiss">
+							L&#39;itinerari m&eacute;s usat &eacute;s passar per RIPOLL i
+							agafar la <strong>N-260 en direcci&oacute;
+								Campdev&agrave;nol / Puigcerd&agrave;</strong>, a 3 km arribarem a
+							CAMPDEV&Agrave;NOL i haurem de girar a l&#39;esquerre i agafar la
+							<strong>carretera GI-401</strong> en direcci&oacute; <strong>Gombr&egrave;n</strong>/
+							La Pobla de Lillet. Passat el c&agrave;mping Pirinenc (<strong>Km
+								3</strong>) trobarem un trencant a l&#39;esquerre que l&#39;haurem
+							d&#39;agafar (<strong>TORRENT DE LA CABANA</strong>), a 100 m
+							(segona curva) es troba el nostre p&agrave;rquing.
+						</p>
 
-			<img class="img-responsive center" src="img/inici/mapaONSOM.jpg">
+						<img class="img-responsive center" src="img/inici/mapaONSOM.jpg">
 
-			
-		</div>
-	</div>
-</div>
+
+					</div>
+				</div>
+			</div>
 
 			<div class="row " ng-include="'footer.html'"></div>
 		</div>

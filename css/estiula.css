@@ -58,13 +58,13 @@ a, a:hover, a:focus{
 .carrusel {
 	max-width: 961px;	
 }
-.tot { 
-	background:url('../img/fons_web.jpg') no-repeat top center;
-}
+/* .tot {  */
+/* 	background:url('../img/fons_web.jpg') no-repeat top center; */
+/* } */
 
-.petit {
-	background:url('../img/fons_petit.jpg') no-repeat top center;
-}
+/* .petit { */
+/* 	background:url('../img/fons_petit.jpg') no-repeat top center; */
+/* } */
 .row {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -109,10 +109,6 @@ a, a:hover, a:focus{
 	margin-bottom: 0px;
 	border: 1px solid transparent;
 	font-family:WC_RoughTrad;
-	background-image:url('../img/banner_web.jpg');
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:top center;
 	position: relative;
 	width: 100%;
 	padding-top: 15.2%;
@@ -123,7 +119,7 @@ a, a:hover, a:focus{
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #CD5D2B;
+	color: black;
 	font-size: 23px;
 }
 
