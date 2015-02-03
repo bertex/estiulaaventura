@@ -87,8 +87,8 @@ a, a:hover, a:focus{
 	padding: 25px;
 }
 .activitatsMain {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .left {
 	float:left;
@@ -106,7 +106,7 @@ a, a:hover, a:focus{
 	min-height: 1452px;
 }
 .col-centre-petit {
-	min-height: 1167px;
+	min-height: 1172px;
 }
 .col-centre-tarifes {
 	min-height: 968px;
@@ -123,6 +123,21 @@ a, a:hover, a:focus{
 .titol {
 	box-shadow: 0px 10px 10px #343434;
 }
+.banner {
+	padding-left: 25px;
+}
+
+.paddInterior {
+	padding-top: 35px;
+}
+.paddInteriorMig {
+	padding-top: 65px;
+	font-size: 25px;
+}
+.paddInteriorPetit {
+	padding-top: 25px;
+	font-size: 19px;
+}
 
 /* nav BAR*/
 .navbar {
@@ -130,9 +145,6 @@ a, a:hover, a:focus{
 	margin-bottom: 0px;
 	border: 1px solid transparent;
 	font-family:WC_RoughTrad;
-	position: relative;
-	width: 100%;
-	padding-top: 15.2%;
 }
 .navbar-default {
 	background-color: transparent;
