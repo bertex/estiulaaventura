@@ -100,8 +100,25 @@ a, a:hover, a:focus{
 /* Part Central de la Web */ 
 .col-centre {
 	background: url("../img/fons_text_PORTADA.jpg") no-repeat center top;
-	height: 100%;
 	box-shadow: 10px 10px 5px #343434;
+}
+.col-centre-portada {
+	min-height: 1452px;
+}
+.col-centre-petit {
+	min-height: 1167px;
+}
+.col-centre-tarifes {
+	min-height: 968px;
+}
+.col-centre-activitats {
+	min-height: 1046px;
+}
+.col-centre-tiquet {
+	min-height: 1300px;
+}
+.marge-top {
+	padding-top: 50px;
 }
 .titol {
 	box-shadow: 0px 10px 10px #343434;
