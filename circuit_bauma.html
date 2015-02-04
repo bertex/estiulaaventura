@@ -10,15 +10,13 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
 <script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+<script
+	src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+<link
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+	rel="stylesheet">
 <script type="text/javascript" src="js/app.js"></script>
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
@@ -90,29 +88,31 @@
 						</ul>
 					</div>
 				</div>
-				<div class=" col-lg-6 col-md-6 col-sm-6">
+				<div class=" col-lg-6 col-md-6 col-sm-6"
+					ng-controller="ModalDemoCtrl">
 					<div class="thumbnail row">
-						<a class="ol-lg-4 col-md-4 col-sm-4"
-							href="img/circuits/bauma/taronja1.jpg"> <img
-							src="img/circuits/bauma/taronja1.jpg"></a> <a
-							class="ol-lg-4 col-md-4 col-sm-4"
-							href="img/circuits/bauma/taronja3.jpg"> <img
-							src="img/circuits/bauma/taronja3.jpg"></a> <a
-							class="ol-lg-4 col-md-4 col-sm-4"
-							href="img/circuits/bauma/taronja5.jpg"> <img
-							src="img/circuits/bauma/taronja5.jpg"></a>
+						<a ng-repeat="photo1 in tab.baumaImgRow1"
+							class="col-lg-4 col-md-4 col-sm-4" href><img
+							src="{{ photo1.src }}" class="img-responsive"
+							ng-click="open(photo)"></a>
 					</div>
 					<div class="thumbnail row">
-						<a class="ol-lg-4 col-md-4 col-sm-4"
-							href="img/circuits/bauma/taronja2.jpg"> <img
-							src="img/circuits/bauma/taronja2.jpg"></a> <a
-							class="ol-lg-4 col-md-4 col-sm-4"
-							href="img/circuits/bauma/taronja4.jpg"> <img
-							src="img/circuits/bauma/taronja4.jpg"></a> <a
-							class="ol-lg-4 col-md-4 col-sm-4"
-							href="img/circuits/bauma/taronja6.jpg"> <img
-							src="img/circuits/bauma/taronja6.jpg"></a>
+						<a ng-repeat="photo2 in tab.baumaImgRow2"
+							class="col-lg-4 col-md-4 col-sm-4" href><img
+							src="{{ photo2.src }}" class="img-responsive"
+							ng-click="open(photo)"></a>
 					</div>
+					<div ng-controller="ModalDemoCtrl">
+						<button class="btn btn-default" ng-click="open()">Open
+							me!</button>
+						<button class="btn btn-default" ng-click="open('lg')">Large
+							modal</button>
+						<button class="btn btn-default" ng-click="open('sm')">Small
+							modal</button>
+						<div ng-show="selected">Selection from a modal: {{ selected
+							}}</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -120,11 +120,6 @@
 			<div class="row " ng-include="'footer.html'"></div>
 		</div>
 	</div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/bootstrap_3.1.1/bootstrap.min.js"></script>
 	<script>
 		(function(i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
