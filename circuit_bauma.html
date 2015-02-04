@@ -13,9 +13,6 @@
 	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
 <script
 	src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
-<link
-	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
-	rel="stylesheet">
 <script type="text/javascript" src="js/app.js"></script>
 
 </head>
@@ -88,31 +85,18 @@
 						</ul>
 					</div>
 				</div>
-				<div class=" col-lg-6 col-md-6 col-sm-6"
+				<div class=" col-lg-5 col-md-5 col-sm-5"
 					ng-controller="ModalDemoCtrl">
 					<div class="thumbnail row">
-						<a ng-repeat="photo1 in tab.baumaImgRow1"
+						<a ng-repeat="photo in tab.baumaImgRow1"
 							class="col-lg-4 col-md-4 col-sm-4" href><img
-							src="{{ photo1.src }}" class="img-responsive"
-							ng-click="open(photo)"></a>
+							src="{{ photo.src }}" ng-click="open(photo)"></a>
 					</div>
 					<div class="thumbnail row">
-						<a ng-repeat="photo2 in tab.baumaImgRow2"
+						<a ng-repeat="photo in tab.baumaImgRow2"
 							class="col-lg-4 col-md-4 col-sm-4" href><img
-							src="{{ photo2.src }}" class="img-responsive"
-							ng-click="open(photo)"></a>
+							src="{{ photo.src }}" ng-click="open(photo)"></a>
 					</div>
-					<div ng-controller="ModalDemoCtrl">
-						<button class="btn btn-default" ng-click="open()">Open
-							me!</button>
-						<button class="btn btn-default" ng-click="open('lg')">Large
-							modal</button>
-						<button class="btn btn-default" ng-click="open('sm')">Small
-							modal</button>
-						<div ng-show="selected">Selection from a modal: {{ selected
-							}}</div>
-					</div>
-
 				</div>
 			</div>
 
