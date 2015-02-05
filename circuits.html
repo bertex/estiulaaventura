@@ -8,8 +8,8 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
-<script	src="js/angular.min.js"></script>
-<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
@@ -17,54 +17,57 @@
 		<div class="estiula container-fluid">
 			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
 			<div ng-init="tab.setTab(8)" ng-include="'navigation.html'"></div>
-			<div  class="{{tab.fons}} col-centre row ">
+			<div class="{{tab.fons}} col-centre row ">
 				<img class="titol img-responsive"
 					src="img/circuits/titols/titol_CIRCUITS.jpg">
 				<div class="paddInterior col-lg-12 col-md-12 col-sm-12">
 					<div class="row-fluid"></div>
 					<img class=" center img-responsive"
 						src="img/circuits/plantilla_circuits.jpg">
-					<table class="table-responsive">
-						<tr>
-							<th>
-								<h4 class="center">Circut Verd de L'Olla</h4>
-							</th>
-							<th>
-								<h4 class="center">Circut Verd Petit Colomer</h4>
-							</th>
-							<th>
-								<h4 class="center">Circut Blau De la Tosca</h4>
-							</th>
-						</tr>
-						<tr>
-							<td><a href="circuit_olla.html"><img
-									class="img-responsive" src="img/circuits/verd_olla_logo.jpg"></a></td>
-							<td><a href="circuit_colomer.html"><img
-									class=" img-responsive"
-									src="img/circuits/verd_petit_colomer_logo.jpg"></a></td>
-							<td><a href="circuit_tosca.html"><img
-									class="  img-responsive"
-									src="img/circuits/blau_la_tosca_LOGO.jpg"></a></td>
-						</tr>
-					</table>
-					<table
-						class="table-responsive col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
-						<tr>
-							<th>
-								<h4 class="center">Circut Taronja La Bauma</h4>
-							</th>
-							<th>
-								<h4 class="center">Circut Tirolina Vol del Falc&oacute;</h4>
-							</th>
-						<tr>
-							<td class="circuits"><a href="circuit_bauma.html"><img
-									class=" img-responsive"
-									src="img/circuits/taronja_la_bauma_LOGO.jpg"></a></td>
-							<td class="circutis"><a href="circuit_falco.html"><img
-									class=" img-responsive"
-									src="img/circuits/Tirolina_vol_del_falco_LOGO.jpg"></a></td>
-						</tr>
-					</table>
+					<div class="row ">
+						<div class=" col-lg-4 col-md-4 col-sm-4">
+							<p class="center brady ">Circut Verd de L&#39;Olla</p>
+							<a href="circuit_olla.html"> <img
+								class="img-responsive center"
+								src="img/circuits/verd_olla_logo.jpg">
+							</a>
+						</div>
+						<div class="  col-lg-4 col-md-4 col-sm-4">
+							<p class="center brady ">Circut Verd Petit Colomer</p>
+							<a href="circuit_colomer.html"> <img
+								class=" img-responsive center "
+								src="img/circuits/verd_petit_colomer_logo.jpg">
+							</a>
+						</div>
+						<div class="  col-lg-4 col-md-4 col-sm-4">
+							<p class="center brady ">Circut Blau De la Tosca</p>
+							<a href="circuit_tosca.html"> <img
+								class=" img-responsive center "
+								src="img/circuits/blau_la_tosca_LOGO.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="row marge-bottom-circuits">
+						<div class=" col-lg-6 col-md-6 col-sm-6">
+							<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+								<p class="center brady ">Circut Taronja La Bauma</p>
+								<a href="circuit_bauma.html"> <img
+									class="img-responsive center"
+									src="img/circuits/taronja_la_bauma_LOGO.jpg">
+								</a>
+							</div>
+						</div>
+						<div class="  col-lg-6 col-md-6 col-sm-6 ">
+							<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+								<p class="center brady ">Circut Tirolina Vol del
+									Falc&oacute;</p>
+								<a href="circuit_falco.html"> <img
+									class=" img-responsive center "
+									src="img/circuits/Tirolina_vol_del_falco_LOGO.jpg">
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 

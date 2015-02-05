@@ -8,8 +8,8 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
-<script	src="js/angular.min.js"></script>
-<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
@@ -17,29 +17,26 @@
 		<div class="estiula container-fluid">
 			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
 			<div ng-init="tab.setTab(19)" ng-include="'navigation.html'"></div>
-			<div  class="{{tab.fons}} col-centre row ">
+			<div class="{{tab.fons}} col-centre row ">
 				<img class="titol img-responsive"
 					src="img/tarifes/titols/titol_HORARIS_CALEND.jpg">
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<img class="paddInteriorMig img-responsive center"
 						src="img/tarifes/calendari_2015.jpg">
-					<table class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-						<tr>
-							<th>
-								<h4 class="brady center">Escoles</h4>
-							</th>
-							<th>
-								<h4 class="brady center">Festes Aniversari</h4>
-							</th>
-						</tr>
-						<tr>
-							<td class="activitatsMain"><a href="escoles.html"><img
-									class="img-responsive" src="img/tarifes/banner_escoles .jpg"></a></td>
-							<td class="activitatsMain"><a href="festes.html"><img
-									class=" img-responsive"
-									src="img/tarifes/banner_festes_aniversari.jpg"></a></td>
-						</tr>
-					</table>
+					<div class="row-fluid paddInteriorMig">
+						<div class=" col-lg-6 col-md-6 col-sm-6">
+							<p class="center brady ">Escoles</p>
+							<a href="escoles.html"> <img class="img-responsive"
+								src="img/tarifes/banner_escoles .jpg">
+							</a>
+						</div>
+						<div class="  col-lg-6 col-md-6 col-sm-6">
+							<p class="center brady ">Festes Aniversari</p>
+							<a href="festes.html"> <img class=" img-responsive"
+								src="img/tarifes/banner_festes_aniversari.jpg">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="row footer" ng-include="'footer.html'"></div>

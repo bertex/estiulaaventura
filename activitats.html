@@ -9,59 +9,54 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
-<script	src="js/angular.min.js"></script>
-<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
 	<div back-img="{{tab.background}}">
 		<div class="estiula container-fluid">
 			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
-			<div ng-init="tab.setTab(14)"
-				ng-include="'navigation.html'"></div>
-			<div  class="{{tab.fons}} col-centre row ">
+			<div ng-init="tab.setTab(14)" ng-include="'navigation.html'"></div>
+			<div class="{{tab.fons}} col-centre row ">
 				<img class=" titol img-responsive"
 					src="img/activitats/titols/titol_ACTIVITATS.jpg">
-				<div class="paddInterior col-lg-12 col-md-12 col-sm-12">
-					<div class="marge-top row-fluid"></div>
-					<table
-						class="table-responsive col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-						<tr>
-							<th>
-								<h4 class=" brady center">Escoles</h4>
-							</th>
-							<th>
-								<h4 class="brady center">Festes Aniversari</h4>
-							</th>
-						</tr>
-						<tr>
-							<td class="activitatsMain"><a href="escoles.html"><img
-									class="img-responsive" src="img/activitats/link_escoles.jpg"></a></td>
-							<td class="activitatsMain"><a href="festes.html"><img
-									class=" img-responsive" src="img/activitats/link_Festes.jpg"></a></td>
-						</tr>
-					</table>
-					<table
-						class="table-responsive col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-						<tr>
-							<th>
-								<h4 class="brady center">Empreses</h4>
-							</th>
-							<th>
-								<h4 class="brady center">Comiats de Solter</h4>
-							</th>
-						<tr>
-							<td class="activitatsMain"><a href="empreses.html"><img
-									class="img-responsive" src="img/activitats/link_Empreses.jpg"></a></td>
-							<td class="activitatsMain"><a href="comiats.html"><img
-									class="img-responsive"
-									src="img/activitats/link_comiats_de_solter.jpg"></a></td>
-						</tr>
-					</table>
-					<a href="compromis.html"><img class="paddInterior center img-responsive"
-						src="img/activitats/Bannereco.jpg"></a>
+				<div class="row paddInteriorMig">
+					<div class=" col-lg-6 col-md-6 col-sm-6">
+						<p class="center brady ">Escoles</p>
+						<a href="escoles.html"> <img class="img-responsive center"
+							src="img/activitats/link_escoles.jpg">
+						</a>
+					</div>
+					<div class="  col-lg-6 col-md-6 col-sm-6">
+						<p class="center brady ">Festes Aniversari</p>
+						<a href="festes.html"> <img class=" img-responsive center "
+							src="img/activitats/link_Festes.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="row paddInteriorMig">
+					<div class=" col-lg-6 col-md-6 col-sm-6">
+						<p class="center brady ">Empreses</p>
+						<a href="empreses.html"> <img class="img-responsive center "
+							src="img/activitats/link_Empreses.jpg">
+						</a>
+					</div>
+					<div class="  col-lg-6 col-md-6 col-sm-6">
+						<p class="center brady ">Comiats de Solter</p>
+						<a href="comiats.html"><img class=" center img-responsive"
+							src="img/activitats/link_comiats_de_solter.jpg"></a>
+					</div>
+				</div>
+				<div class=" col-lg-10 col-md-10 col-sm-10 paddInteriorMig ">
+					<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+						<a class="" href="compromis.html"><img
+							class="center paddInterior marge-bottom img-responsive"
+							src="img/activitats/Bannereco.jpg"></a>
+					</div>
 				</div>
 			</div>
+			
 			<div class="row " ng-include="'footer.html'"></div>
 		</div>
 	</div>
