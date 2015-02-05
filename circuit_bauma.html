@@ -5,22 +5,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EstiulAventura</title>
-
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
-<script
-	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
-<script
-	src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+<script	src="js/angular.min.js"></script>
+<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
 	<div back-img="{{tab.background}}">
 		<div class="estiula container-fluid">
-			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
 			<div ng-init="tab.setTab(12)" ng-include="'navigation.html'"></div>
+			<div ng-controller="CarouselDemoCtrl">
+				<carousel interval="myInterval"> <slide
+					ng-repeat="slide in tab.galleryBauma" active="slide.active"> <img
+					ng-src="{{slide.src}}" class=" img-responsiv img-thumbnail">
+				</slide> </carousel>
+			</div>
 			<div class="{{tab.fons}} col-centre row ">
 				<img class="titol img-responsive"
 					src="img/circuits/titols/titol_TARONJA_LA_BAUMA.jpg">

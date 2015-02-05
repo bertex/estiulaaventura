@@ -6,8 +6,8 @@
 		this.background = "img/fons_petit.jpg";
 		this.banner = "img/banner_fons_petit.jpg";
 		this.fons = "col-centre-petit";
-		
-		/* definicio dels thumbnails de circuits  separats per circuits i per files */
+
+		/* definicio dels thumbnails de circuits. Separats per circuits i per files */
 		this.baumaImgRow1 = [
 		                     { src:"img/circuits/bauma/taronja1.jpg"},
 		                     { src:"img/circuits/bauma/taronja3.jpg"},
@@ -44,6 +44,41 @@
 		                     { src:"img/circuits/falco/tirolina1.jpg"},
 		                     { src:"img/circuits/falco/tirolina2.jpg"},
 		                     { src:"img/circuits/falco/tirolina3.jpg"} ];
+		/* definicio de les diferents gallery */
+
+		this.galleryOlla = [
+		                    { src:"img/gallery/circuits/olla1.jpg"},
+		                    { src:"img/gallery/circuits/olla2.jpg"} ];
+
+		this.galleryColomer = [
+		                       { src:"img/gallery/circuits/colomer1.jpg"},
+		                       { src:"img/gallery/circuits/colomer2.jpg"} ];
+
+		this.galleryFalco = [
+		                     { src:"img/gallery/circuits/falco1.jpg"},
+		                     { src:"img/gallery/circuits/falco2.jpg"} ];
+
+		this.galleryTosca = [ { src:"img/gallery/circuits/tosca2.jpg"} ];
+
+		this.galleryBauma = [
+		                     { src:"img/gallery/circuits/bauma1.jpg"},
+		                     { src:"img/gallery/circuits/bauma2.jpg"} ];
+
+		this.galleryEmpreses = [ { src:"img/gallery/activitats/banner_empreses.jpg"} ];
+
+		this.galleryEscoles = [ { src:"img/gallery/activitats/banner_escoles.jpg"} ];
+
+		this.galleryFestes = [ { src:"img/gallery/activitats/banner_festes.jpg"} ];
+
+		this.galleryComiats = [ { src:"img/gallery/activitats/banner_comiats.jpg"} ];
+
+		this.gallery = [
+		                { src:"img/gallery/banner_foto1.jpg"},
+		                { src:"img/gallery/banner_foto2.jpg"},
+		                { src:"img/gallery/banner_foto3.jpg"},
+		                { src:"img/gallery/banner_foto4.jpg"},
+		                { src:"img/gallery/banner_foto5.jpg"},
+		                { src:"img/gallery/banner_foto6.jpg"} ];
 
 		/* definicio de les imatges e compromis ecologic */ 
 		this.compromis = [
@@ -55,7 +90,7 @@
 		                  { src:"img/inici/extracfustaweb.jpg"},
 		                  { src:"img/inici/boletweb.jpg"},
 		                  { src:"img/inici/aprofherba.jpg"} ];
-		                  
+
 		/* funció que defineix quin banner i quin fons te cada pagina */ 
 		this.setTab = function(setTab) {
 			this.tab = setTab;
@@ -172,9 +207,10 @@
 		console.log($scope);
 
 	};
-	
+
 	/* Controlador de Dropdown */ 
 	app.controller('DropdownCtrl', function ($scope, $log) {
+		/* definicio dels menus dropdown. link i titol*/
 		$scope.inici = [
 		                {src:'quisom.html', desc:'Qui Som?'},
 		                {src:'aquivadirigit.html', desc: 'A qui va dirigit?'},
@@ -203,5 +239,20 @@
 			$scope.status.isopen = !$scope.status.isopen;
 		};
 	});
+	/* controlador de Carrusel */
+	app.controller('CarouselDemoCtrl', function ($scope) {
+		  $scope.myInterval = 5000;
+		  var slides = $scope.slides = [];
+		  $scope.addSlide = function() {
+		    var newWidth = 600 + slides.length + 1;
+		    slides.push({
+		      image: 'http://placekitten.com/' + newWidth + '/300'
+		     
+		    });
+		  };
+		  for (var i=0; i<4; i++) {
+		    $scope.addSlide();
+		  }
+		});
 
 })();
