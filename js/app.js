@@ -6,7 +6,8 @@
 		this.background = "img/fons_petit.jpg";
 		this.banner = "img/banner_fons_petit.jpg";
 		this.fons = "col-centre-petit";
-
+		
+		/* definicio dels thumbnails de circuits  separats per circuits i per files */
 		this.baumaImgRow1 = [
 		                     { src:"img/circuits/bauma/taronja1.jpg"},
 		                     { src:"img/circuits/bauma/taronja3.jpg"},
@@ -44,14 +45,28 @@
 		                     { src:"img/circuits/falco/tirolina2.jpg"},
 		                     { src:"img/circuits/falco/tirolina3.jpg"} ];
 
-
-
+		/* definicio de les imatges e compromis ecologic */ 
+		this.compromis = [
+		                  { src:"img/inici/compostweb.jpg"},
+		                  { src:"img/inici/lavabosweb.jpg"},
+		                  { src:"img/inici/plaquesweb.jpg"},
+		                  { src:"img/inici/bateriesweb.jpg"},
+		                  { src:"img/inici/ovellaweb.jpg"},
+		                  { src:"img/inici/extracfustaweb.jpg"},
+		                  { src:"img/inici/boletweb.jpg"},
+		                  { src:"img/inici/aprofherba.jpg"} ];
+		                  
+		/* funció que defineix quin banner i quin fons te cada pagina */ 
 		this.setTab = function(setTab) {
 			this.tab = setTab;
 			if ((setTab==1)||(setTab==7)) {
 				this.background="img/fons_web.jpg";
 				this.banner ="img/banner_web.jpg";
-				this.fons="col-centre-portada";
+				if (setTab==7)  {
+					this.fons = "col-centre-faq"
+				} else {
+					this.fons="col-centre-portada";	
+				}
 			} else if ((setTab>=15)&& (setTab <=18) ) {
 				this.background="img/fons_activitats.jpg";
 				this.banner ="img/banner_activitats.jpg";
@@ -63,10 +78,10 @@
 			} else if (setTab==21)  {
 				this.fons = "col-centre-tiquet";
 			}
-
 		};
 	});
 
+	/* directiva de canvi de background en el banner */ 
 	app.directive('bannerImg', function(){
 		return function(scope, element, attrs){
 			attrs.$observe('bannerImg', function(value) {
@@ -80,6 +95,7 @@
 		};
 	});
 
+	/* directiva de canvi de background de la WEB */ 
 	app.directive('backImg', function(){
 		return function(scope, element, attrs){
 			attrs.$observe('backImg', function(value) {
@@ -90,9 +106,8 @@
 		};
 	});
 
+	/* Controlador Modal (abans que s'obri) */ 
 	app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
-
-		$scope.items = ['item1', 'item2', 'item3'];
 
 		$scope.open = function (photo) {
 
@@ -120,10 +135,7 @@
 		};
 	});
 
-
-	// Please note that $modalInstance represents a modal window (instance) dependency.
-	// It is not the same as the $modal service used above.
-
+	/* Controlador de "modal" (popUp windows de les imatges un cop obertes ) */
 	app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
 		$scope.items = items;
@@ -160,6 +172,8 @@
 		console.log($scope);
 
 	};
+	
+	/* Controlador de Dropdown */ 
 	app.controller('DropdownCtrl', function ($scope, $log) {
 		$scope.inici = [
 		                {src:'quisom.html', desc:'Qui Som?'},
@@ -170,10 +184,10 @@
 		                {src:'faq.html', desc:'Pregutnes Freqüents'}
 		                ];
 		$scope.tarifes = [
-		                {src:'horaris.html', desc:'Horaris i Calendari 2015 '},
-		                {src:'tarifes.html', desc: 'Tarifes '},
-		                {src:'tiquetRegal.html', desc:'Tiquet Regal'}
-		                ];
+		                  {src:'horaris.html', desc:'Horaris i Calendari 2015 '},
+		                  {src:'tarifes.html', desc: 'Tarifes '},
+		                  {src:'tiquetRegal.html', desc:'Tiquet Regal'}
+		                  ];
 
 		$scope.status = {
 				isopen: false

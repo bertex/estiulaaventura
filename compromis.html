@@ -20,14 +20,14 @@
 		<div class="estiula container-fluid">
 			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
 			<div ng-init="tab.setTab(6)" ng-include="'navigation.html'"></div>
-			<div  class="{{tab.fons}} col-centre row ">
+			<div class="{{tab.fons}} col-centre row ">
 				<img class="titol img-responsive"
 					src="img/inici/titol/titol_COMPROMIS_ECO.jpg">
 				<div class="col-lg-8 col-md-8 col-sm-8">
 					<div
 						class="paddInteriorPetit row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
 
-						<p class=" swiss">
+						<p class=" fontTextLlarg swiss">
 							ESTIULAVENTURA &eacute;s una empresa que ofereix oci i
 							diversi&oacute; al visitant , mitjan&ccedil;ant una activitat que
 							a part de practicar esport refor&ccedil;a molts valors positius
@@ -40,15 +40,15 @@
 							vida rural en que es troba envoltada.
 						</p>
 
-						<p class="swiss">
+						<p class="fontTextLlarg swiss">
 							Per aquests motius la nostra empresa ha apostat per ser una
 							empresa <strong><u>ECOL&Ograve;GICA i SOSTENIBLE</u></strong>.
 						</p>
 
-						<p class="brady">
+						<p class="fontTextLlarg brady">
 							<strong><u>PERQU&Egrave; ECOL&Ograve;GICA?</u></strong>
 						</p>
-						<ul class="swiss">
+						<ul class="fontTextLlarg swiss">
 							<li><strong>WC ECOL&Ograve;GICS</strong> en que els
 								l&iacute;quids despr&eacute;s de separar-se dels s&ograve;lids
 								es drenen en les pastures immediates on tenim les
@@ -75,11 +75,11 @@
 								circuits.</li>
 						</ul>
 
-						<p class="brady">
+						<p class="fontTextLlarg brady">
 							<strong><u>PERQU&Egrave; SOSTENIBLE?</u></strong>
 						</p>
 
-						<ul class="swiss">
+						<ul class="fontTextLlarg swiss">
 							<li><strong>COMPARTIM PASTURA</strong> amb ovelles en les
 								nostres instal&middot;lacions tal com s&#39;efectuava abans en
 								la ubicaci&oacute; dels terrenys on est&agrave; el parc
@@ -101,22 +101,14 @@
 
 					</div>
 				</div>
-<!-- 				<div class="col-lg-5 col-md-5 col-sm-5"> -->
-<!-- 					<div class="row-fluid "> -->
-
-
-<!-- 						<img class="img-responsive" src="img/inici/bateriesweb.jpg"> -->
-<!-- 						<img class="img-responsive" src="img/inici/compostweb.jpg"> -->
-<!-- 						<img class="img-responsive" src="img/inici/lavabosweb.jpg"> -->
-<!-- 						<img class="img-responsive" src="img/inici/plaquesweb.jpg"> -->
-<!-- 						<img class="img-responsive" src="img/inici/ovellaweb.jpg"> <img -->
-<!-- 							class="img-responsive" src="img/inici/aprofherba.jpg"> <img -->
-<!-- 							class="img-responsive" src="img/inici/extracfustaweb.jpg"> -->
-<!-- 						<img class="img-responsive" src="img/inici/boletweb.jpg"> -->
-
-<!-- 					</div> -->
-
-<!-- 				</div> -->
+				<div class=" paddInteriorPetit col-lg-2 col-md-2 col-sm-2"
+					ng-controller="ModalDemoCtrl">
+					<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+						<div class="thumbnail row" ng-repeat="photo in tab.compromis">
+							<a href><img src="{{ photo.src }}" ng-click="open(photo)"></a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="row " ng-include="'footer.html'"></div>
 		</div>

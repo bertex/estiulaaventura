@@ -99,7 +99,7 @@ a, a:hover, a:focus{
 }
 /* Part Central de la Web */ 
 .col-centre {
-	background: url("../img/fons_text_PORTADA.jpg") no-repeat center top;
+	background: url("../img/fons_text_PORTADA.jpg") repeat-y center top;
 	box-shadow: 10px 10px 5px #343434;
 }
 .col-centre-portada {
@@ -116,6 +116,9 @@ a, a:hover, a:focus{
 }
 .col-centre-tiquet {
 	min-height: 1300px;
+}
+.col-centre-faq {
+	min-height: 1552px;
 }
 .marge-top {
 	padding-top: 50px;
@@ -136,7 +139,12 @@ a, a:hover, a:focus{
 }
 .paddInteriorPetit {
 	padding-top: 25px;
-	font-size: 19px;
+}
+.fontTextLlarg {
+	font-size: 20px;
+}
+.fontTextFAQ {
+	font-size: 22px;
 }
 
 /* nav BAR*/
