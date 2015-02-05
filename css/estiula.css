@@ -17,7 +17,7 @@
 }
 @font-face {
     font-family: BradBunR;
-    src: url('../fonts/BradBunR.ttf');
+    src: url('../fonts/BradBunR.ttf') format('truetype');
 }
 
 .swiss {
@@ -58,13 +58,6 @@ a, a:hover, a:focus{
 .carrusel {
 	max-width: 961px;	
 }
-/* .tot {  */
-/* 	background:url('../img/fons_web.jpg') no-repeat top center; */
-/* } */
-
-/* .petit { */
-/* 	background:url('../img/fons_petit.jpg') no-repeat top center; */
-/* } */
 .row {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -117,6 +110,9 @@ a, a:hover, a:focus{
 .col-centre-tiquet {
 	min-height: 1300px;
 }
+.col-centre-circuits {
+	min-height: 860px;
+}
 .col-centre-faq {
 	min-height: 1552px;
 }
@@ -145,6 +141,9 @@ a, a:hover, a:focus{
 }
 .fontTextFAQ {
 	font-size: 22px;
+}
+.fontTextCircuit {
+	font-size: 20px;
 }
 
 /* nav BAR*/

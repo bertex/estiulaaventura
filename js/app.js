@@ -17,11 +17,11 @@
 		                     { src:"img/circuits/bauma/taronja4.jpg"},
 		                     { src:"img/circuits/bauma/taronja6.jpg"} ];
 		this.toscaImgRow1 = [
-		                     { src:"img/circuits/tosca/blau1.jpg"},
+		                     { src:"img/circuits/tosca/blau2.jpg"},
 		                     { src:"img/circuits/tosca/blau3.jpg"},
 		                     { src:"img/circuits/tosca/blau5.jpg"} ];
 		this.toscaImgRow2 = [
-		                     { src:"img/circuits/tosca/blau2.jpg"},
+		                     { src:"img/circuits/tosca/blau1.jpg"},
 		                     { src:"img/circuits/tosca/blau4.jpg"},
 		                     { src:"img/circuits/tosca/blau6.jpg"} ];
 		this.ollaImgRow1 = [
@@ -33,12 +33,12 @@
 		                    { src:"img/circuits/olla/olla4.jpg"},
 		                    { src:"img/circuits/olla/olla6.jpg"} ];
 		this.colomerImgRow1 = [
-		                       { src:"img/circuits/colomer/colomer1.jpg"},
+		                       { src:"img/circuits/colomer/colomer4.jpg"},
 		                       { src:"img/circuits/colomer/colomer3.jpg"},
 		                       { src:"img/circuits/colomer/colomer5.jpg"} ];
 		this.colomerImgRow2 = [
 		                       { src:"img/circuits/colomer/colomer2.jpg"},
-		                       { src:"img/circuits/colomer/colomer4.jpg"},
+		                       { src:"img/circuits/colomer/colomer1.jpg"},
 		                       { src:"img/circuits/colomer/colomer6.jpg"} ];
 		this.falcoImgRow1 = [
 		                     { src:"img/circuits/falco/tirolina1.jpg"},
@@ -102,6 +102,8 @@
 				} else {
 					this.fons="col-centre-portada";	
 				}
+			} else if  ((setTab>=9) || setTab<=13){
+				this.fons="col-centre-circuits";
 			} else if ((setTab>=15)&& (setTab <=18) ) {
 				this.background="img/fons_activitats.jpg";
 				this.banner ="img/banner_activitats.jpg";
