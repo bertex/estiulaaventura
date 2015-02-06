@@ -163,7 +163,6 @@
 				}
 			});
 
-
 			modalInstance.result.then(function (selectedItem) {
 				$scope.selected = selectedItem;
 			}, function () {
@@ -171,43 +170,16 @@
 			});
 		};
 	});
+	
+	/* controlador finestra modal un cop oberta */
+	var ModalInstanceCtrl = function ($scope, $modalInstance, photo) {
 
-	/* Controlador de "modal" (popUp windows de les imatges un cop obertes ) */
-	app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
-
-		$scope.items = items;
-		$scope.selected = {
-				item: $scope.items[0]
-		};
-
-		$scope.ok = function () {
-			$modalInstance.close($scope.selected.item);
-		};
-
-		$scope.cancel = function () {
-			$modalInstance.dismiss('cancel');
-		};
-	});
-
-
-	var ModalInstanceCtrl = function ($scope, $modalInstance, items, photo) {
-
-		$scope.items = items;
 		$scope.photo = photo;
-		$scope.selected = {
-				item: $scope.items[0]
-		};
-
-		$scope.ok = function () {
-			$modalInstance.close($scope.selected.item);
-		};
-
 
 		$scope.cancel = function () {
 			$modalInstance.dismiss('cancel');
 		};
 		console.log($scope);
-
 	};
 
 	/* Controlador de Dropdown */ 
@@ -245,16 +217,6 @@
 	app.controller('CarouselDemoCtrl', function ($scope) {
 		  $scope.myInterval = 5000;
 		  var slides = $scope.slides = [];
-		  $scope.addSlide = function() {
-		    var newWidth = 600 + slides.length + 1;
-		    slides.push({
-		      image: 'http://placekitten.com/' + newWidth + '/300'
-		     
-		    });
-		  };
-		  for (var i=0; i<4; i++) {
-		    $scope.addSlide();
-		  }
 		});
 
 })();
