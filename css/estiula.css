@@ -4,12 +4,20 @@
     src: url('../fonts/swissc.ttf');
 }
 @font-face {
+    font-family: swiss;
+    src: url('../fonts/swissc.eot');
+}
+@font-face {
     font-family: WC_RoughTrad;
     src: url('../fonts/WC_RoughTrad.ttf');
 }
 @font-face {
-    font-family: BlackMetalSans;
-    src: url('../fonts/BlackMetalSans.ttf');
+ font-family: BlackMetalSans;
+ src: url("../fonts/Black_Metal_Sans.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: BlackMetalSans;
+ src: url("../fonts/Black_Metal_Sans.ttf") /* TTF file for CSS3 browsers */
 }
 @font-face {
     font-family: Timoteo;
@@ -127,6 +135,15 @@ a, a:hover, a:focus{
 .marge-bottom-inici2 {
 	padding-bottom: 250px;
 }
+.marge-bottom-inici3 {
+	padding-bottom: 230px;
+}
+.marge-bottom-inici4 {
+	padding-bottom: 95px;
+}
+.marge-bottom-inici4 {
+	padding-bottom: 78px;
+}
 .titol {
 	box-shadow: 0px 10px 10px #343434;
 }
@@ -144,11 +161,14 @@ a, a:hover, a:focus{
 .paddInteriorPetit {
 	padding-top: 25px;
 }
+.paddInteriorXs {
+	padding-top: 15px;
+}
 .fontTextLlarg {
 	font-size: 20px;
 }
 .fontTextFAQ {
-	font-size: 22px;
+	font-size: 21px;
 }
 .fontTextCircuit {
 	font-size: 17px;
