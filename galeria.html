@@ -1,13 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstiulAventura</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstiulAventura</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/estiula.css" rel=stylesheet type="text/css">
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="EstiulaAventura" ng-controller="TabController as tab">
+	<div back-img="{{tab.background}}">
+		<div class="estiula container-fluid">
+			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
+			<div ng-init="tab.setTab(22)" ng-include="'navigation.html'"></div>
+			<div class="{{tab.fons}} col-centre row ">
 
-<div class="col-centre row">
-	<div class="col-lg-12 col-md-12 col-sm-12">
-<!-- 		<iframe src="//player.vimeo.com/video/100407303" width="100%" -->
-<!-- 			height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen -->
-<!-- 			allowfullscreen></iframe> -->
-<!-- 		<p> -->
-<!-- 			<a href="http://vimeo.com/100407303">que es estiulaventura</a> from <a -->
-<!-- 				href="http://vimeo.com/user29973544">Eloi Villar</a> on <a -->
-<!-- 				href="https://vimeo.com">Vimeo</a>. -->
-<!-- 		</p> -->
+				<div class="col-lg-10 col-md-10 col-sm-10">
+					<div
+						class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 paddInteriorMig"
+						style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'>
+						<iframe id='iframe'
+							src='http://flickrit.com/slideshowholder.php?height=75&size=big&userId=125973378@N06&trans=1&theme=1&thumbnails=1&transition=0&layoutType=responsive&sort=0'
+							scrolling='no' frameborder='0'
+							style='width: 100%; height: 100%; position: absolute; top: 0; left: 0;'></iframe>
+					</div>
+				</div>
+
+
+
+			</div>
+			<div class="row footer" ng-include="'footer.html'"></div>
+		</div>
 	</div>
-</div>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-52510623-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
+
+
+
+
