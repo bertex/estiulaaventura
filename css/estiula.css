@@ -64,6 +64,11 @@ a, a:hover, a:focus{
 	margin-right: 0px;
 }
 /* Modificadors de Style */
+.img-thumbnail {
+	padding: 0px; 
+	background-color: transparent;
+	border: 1px solid transparent;
+}
 .taronja {
 	color: #CD5D2B;
 }
