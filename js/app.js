@@ -191,7 +191,7 @@
 		                {src:'onsom.html', desc:'On som?'},
 		                {src:'seguretat.html', desc:'Seguretat'},
 		                {src:'compromis.html', desc:'Compromís ecològic'},
-		                {src:'faq.html', desc:'Pregutnes Freqüents'}
+		                {src:'faq.html', desc:'Preguntes Freqüents'}
 		                ];
 		$scope.tarifes = [
 		                  {src:'horaris.html', desc:'Horaris i Calendari 2015 '},
