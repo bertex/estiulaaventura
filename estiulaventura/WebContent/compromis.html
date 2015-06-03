@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstiulAventura</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/estiula.css" rel=stylesheet type="text/css">
+<script	src="js/angular.min.js"></script>
+<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="EstiulaAventura" ng-controller="TabController as tab">
+	<div back-img="{{tab.background}}">
+		<div class="estiula container-fluid">
+			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
+			<div ng-init="tab.setTab(6)" ng-include="'navigation.html'"></div>
+			<div class="{{tab.fons}} col-centre row ">
+				<img class="titol img-responsive"
+					src="img/inici/titol/titol_COMPROMIS_ECO.jpg">
+				<div class="col-lg-9 col-md-9 col-sm-9">
+					<div
+						class="paddInteriorPetit row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+
+						<p class=" fontTextLlarg swiss">
+							ESTIULAVENTURA &eacute;s una empresa que ofereix oci i
+							diversi&oacute; al visitant , mitjan&ccedil;ant una activitat que
+							a part de practicar esport refor&ccedil;a molts valors positius
+							com s&oacute;n el <strong>coratge, la superaci&oacute;
+								personal, la confian&ccedil;a i l&#39;autoestima en un mateix,
+								l&#39;agilitat, l&#39;equilibri, el companyerisme</strong>,...
+							per&ograve; a part de l&#39;activitat acrob&agrave;tica en si per
+							damunt dels arbres, ESTIULAVENTURA es vol mostrar al visitant com
+							una empresa respectuosa amb el medi natural i compatible amb la
+							vida rural en que es troba envoltada.
+						</p>
+
+						<p class="fontTextLlarg swiss">
+							Per aquests motius la nostra empresa ha apostat per ser una
+							empresa <strong><u>ECOL&Ograve;GICA i SOSTENIBLE</u></strong>.
+						</p>
+
+						<p class="fontTextLlarg blackMetal">
+							<strong><u>PERQU&Egrave; ECOL&Ograve;GICA?</u></strong>
+						</p>
+						<ul class="fontTextLlarg swiss">
+							<li><strong>WC ECOL&Ograve;GICS</strong> en que els
+								l&iacute;quids despr&eacute;s de separar-se dels s&ograve;lids
+								es drenen en les pastures immediates on tenim les
+								instal&middot;lacions despr&eacute;s de passar tamb&eacute; per
+								uns rajos infrarojos on s&#39;eliminen els residus contaminants
+								i els s&ograve;lids es dipositen en un c&agrave;mera on es
+								genera un compost.</li>
+
+							<li><strong>PLAQUES SOLARS</strong> en la captaci&oacute; de
+								rajos solars per generar energia el&egrave;ctrica pels
+								electrodom&egrave;stics de que disposem en les nostres
+								instal&middot;lacions.</li>
+							<li><strong>BATERIES</strong>on s&#39;emmagatzema
+								l&#39;energia el&egrave;ctrica produ&iuml;da per les plaques
+								solars per utilitzar posteriorment en els aparells
+								el&egrave;ctrics.</li>
+
+							<li><strong>AIGUA DE FONT</strong> en la captaci&oacute;
+								d&#39;aigua per les nostres instal&middot;lacions degudament
+								tractada.</li>
+
+							<li><strong>PRODUCTES ECOL&Ograve;GICS</strong> utilitzats
+								en la neteja i manteniment del parc com en la construcció dels
+								circuits.</li>
+						</ul>
+
+						<p class="fontTextLlarg blackMetal">
+							<strong><u>PERQU&Egrave; SOSTENIBLE?</u></strong>
+						</p>
+
+						<ul class="fontTextLlarg swiss">
+							<li><strong>COMPARTIM PASTURA</strong> amb ovelles en les
+								nostres instal&middot;lacions tal com s&#39;efectuava abans en
+								la ubicaci&oacute; dels terrenys on est&agrave; el parc
+								d&#39;aventura.</li>
+
+							<li><strong>L&#39;EXTRACCI&Oacute; DE FUSTA</strong> del
+								bosc es continua produint tal com s&#39;extreia amb anterioritat
+								a la nostra arribada.</li>
+
+							<li><strong>L&#39;APROFITAMENT DE BOLETS</strong> del bosc i
+								terrenys adjacents es segueix produint tot i les nostres
+								instal&middot;lacions i l&#39;activitat que es du a terme.</li>
+
+							<li><strong>L&#39;APROFITAMENT DE L&#39;HERBA</strong> dels
+								prats de les nostres instal&middot;lacions s&#39;aprofiten tot i
+								l&#39;&uacute;s i el funcionament de les nostra activitat.</li>
+						</ul>
+
+
+					</div>
+				</div>
+				<div class=" marge-bottom-inici4 paddInteriorPetit col-lg-2 col-md-2 col-sm-2"
+					ng-controller="ModalDemoCtrl">
+					<div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+						<div class="thumbnail row" ng-repeat="photo in tab.compromis">
+							<a href><img src="{{ photo.src }}" ng-click="open(photo)"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row " ng-include="'footer.html'"></div>
+		</div>
+	</div>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-52510623-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

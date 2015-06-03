@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstiulAventura</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/estiula.css" rel=stylesheet type="text/css">
+<script	src="js/angular.min.js"></script>
+<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="EstiulaAventura" ng-controller="TabController as tab">
+	<div back-img="{{tab.background}}">
+		<div class="estiula container-fluid">
+			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
+			<div ng-init="tab.setTab(10)"
+				ng-include="'navigation.html'"></div>
+			<div ng-controller="CarouselDemoCtrl">
+				<carousel interval="myInterval"> <slide
+					ng-repeat="slide in tab.galleryColomer" active="slide.active"> <img
+					ng-src="{{slide.src}}" class=" img-responsiv img-thumbnail">
+				</slide> </carousel>
+			</div>
+			<div  class="{{tab.fons}} col-centre row ">
+				<img class="titol img-responsive"
+					src="img/circuits/titols/titol_VERD_EL_PETIT_COLOMER.jpg">
+				<div class="col-lg-11 col-md-11 col-sm-11">
+					<div
+						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+						<p class="paddInteriorPetit fontTextCircuit swiss">Aquest circuit est&agrave; pensat per a nens
+							i nenes de tres anys i fins al 1,30 m d&#39;al&ccedil;ada. Consta
+							de 13 jocs com per exemple tirolines, ponts penjant, xarxes...
+							Els monitors us explicaran el funcionament de les
+							instal&middot;lacions i seran els pares qui des del terra aniran
+							acompanyant els infants (Acc&eacute;s gratu&iuml;t per als
+							pares).</p>
+						<p class="fontTextCircuit timoteo">Els Jocs del Circuit</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5">
+					<div
+						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+
+						<ul class="fontTextCircuit swiss">
+							<li>Pont de fusta</li>
+							<li>Pont Indiana Jones</li>
+							<li>Troncs clavats</li>
+							<li>Xarxa aranya</li>
+							<li>Tirolina</li>
+							<li>Biga penjant</li>
+							<li>Xarxa en U</li>
+							<li>Cistelleta voladora</li>
+							<li>Pont nepal&egrave;s</li>
+							<li>Xarxa plana</li>
+							<li>Pont gronxadors</li>
+							<li>Pont de plataformes</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<img style="max-width: 100%"
+						src="//cdn.thinglink.me/api/image/611964220661039106/1024/10/scaletowidth#tl-611964220661039106;1043138249'"
+						class="alwaysThinglink" />
+					<script async charset="utf-8" src="//cdn.thinglink.me/jse/embed.js"></script>
+				</div>
+				<div class="col-lg-10 col-md-10 col-sm-10">
+					<div
+						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+						<p class="paddInteriorPetit fontTextCircuit timoteo">Caracter&iacute;stiques t&egrave;cniques
+							del circuit</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div
+						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+						<ul class="fontTextCircuit swiss">
+							<li>Numero de jocs: 13</li>
+							<li>Alçada plataformes: entre 1 i 1,5 metres</li>
+							<li>Longitud total circuit: 190 metres</li>
+							<li>A partir de: 3 anys i fins a 1,30 m d&#39;al&ccedil;ada</li>
+							<li>Dificultat: baixa</li>
+							<li>Durada: 30 minuts</li>
+						</ul>
+					</div>
+				</div>
+				<div class=" col-lg-5 col-md-5 col-sm-5"
+					ng-controller="ModalDemoCtrl">
+					<div class="thumbnail row">
+						<a ng-repeat="photo in tab.colomerImgRow1"
+							class="col-lg-4 col-md-4 col-sm-4" href><img
+							src="{{ photo.src }}" ng-click="open(photo)"></a>
+					</div>
+					<div class="thumbnail row">
+						<a ng-repeat="photo in tab.colomerImgRow2"
+							class="col-lg-4 col-md-4 col-sm-4" href><img
+							src="{{ photo.src }}" ng-click="open(photo)"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row " ng-include="'footer.html'"></div>
+		</div>
+	</div>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-52510623-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

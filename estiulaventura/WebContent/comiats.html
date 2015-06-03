@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstiulAventura</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/estiula.css" rel=stylesheet type="text/css">
+<script	src="js/angular.min.js"></script>
+<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body ng-app="EstiulaAventura" ng-controller="TabController as tab">
+	<div back-img="{{tab.background}}">
+		<div class="estiula container-fluid">
+			<div ng-init="tab.setTab(18)" ng-include="'navigation.html'"></div>
+			<div ng-controller="CarouselDemoCtrl">
+				<carousel interval="myInterval"> <slide
+					ng-repeat="slide in tab.galleryComiats" active="slide.active"> <img
+					ng-src="{{slide.src}}" class=" img-responsiv img-thumbnail">
+				</slide> </carousel>
+			</div>
+			<div  class="{{tab.fons}} col-centre row ">
+				<img class="titol img-responsive"
+					src="img/activitats/titols/titol_COMIATS_DE_SOLTER.jpg">
+				<div class="col-lg-11 col-md-11 col-sm-11">
+					<div
+						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+						<p class="paddInteriorMig blackMetal">Fes un comiat original i vine a
+							ESTIULAVENTURA !</p>
+						<p class="paddInteriorMig swiss">Viu un dia tant especial com aquest amb
+							nosaltres; et garantim una jornada de diversi&oacute; i plena
+							d&#39;emocions en el qual tu i els teus amics haureu de superar
+							tots els jocs proposats damunt dels arbres enmig d&#39;un entorn
+							immillorable. Atreveix-te i puja als dos circuits que tenim
+							esperant-te!</p>
+						<p class="paddInteriorMig blackMetal">Veniu i gaudiu d&#39;un dia inoblidable
+							en plena natura!</p>
+						<p class="paddInteriorMig taronja swiss">
+							<strong>Demaneu-nos pressupost i segur que trobarem una
+								proposta al vostre gust i ajustada a les vostres necessitats.</strong>
+						</p>
+
+						<p class="paddInteriorMig blackMetal">
+							<a href="onsom.html"><strong>CONTACTEU AMB
+									NOSALTRES!</strong></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row " ng-include="'footer.html'"></div>
+		</div>
+	</div>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-52510623-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

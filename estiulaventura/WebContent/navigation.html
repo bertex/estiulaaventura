@@ -1,0 +1,41 @@
+<nav banner-img="{{tab.banner}}" class=" nav navbar navbar-default"
+	role="navigation">
+	<a href="index.html"><img class="banner img-responsive"
+		src="img/logo_WEB.png"></a>
+	<div class="container-fluid" ng-controller="DropdownCtrl">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse"   ng-class="!navCollapsed && 'in'">
+			<ul class="uppercase taronja nav navbar-nav">
+				<li class="dropdown" dropdown on-toggle="toggled(open)"><a href
+					class="dropdown-toggle" dropdown-toggle> Inici<span
+						class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li class="blackMetal" ng-repeat="choice in inici"><a href="{{choice.src}}">{{choice.desc}}</a>
+						</li>
+					</ul></li>
+				<li><a href="circuits.html">Circuits</a></li>
+				<li><a href="activitats.html">Activitats</a></li>
+				<li class="dropdown" dropdown on-toggle="toggled(open)"><a href
+					class="dropdown-toggle" dropdown-toggle> Tarifes / Horaris<span
+						class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li class="blackMetal" ng-repeat="choice in tarifes"><a href="{{choice.src}}">{{choice.desc}}</a>
+						</li>
+					</ul></li>
+				<li><a href="galeria.html">Galeria</a></li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+</nav>

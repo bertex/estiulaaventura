@@ -1,0 +1,221 @@
+/* FONT */
+@font-face {
+    font-family: swiss;
+    src: url('../fonts/swissc.ttf');
+}
+@font-face {
+    font-family: swiss;
+    src: url('../fonts/swissc.eot');
+}
+@font-face {
+    font-family: WC_RoughTrad;
+    src: url('../fonts/WC_RoughTrad.ttf');
+}
+@font-face {
+ font-family: BlackMetalSans;
+ src: url("../fonts/Black_Metal_Sans.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: BlackMetalSans;
+ src: url("../fonts/Black_Metal_Sans.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: Timoteo;
+    src: url('../fonts/Timoteo.ttf');
+}
+
+.swiss {
+	font-family: swiss;
+	font-size: 21px;
+}
+
+.WC {
+	font-family: WC_RoughTrad;
+	font-size: 21px;
+}
+.blackMetal {
+	font-family: BlackMetalSans;
+	font-size: 21px;
+}
+.timoteo {
+	font-family: Timoteo;
+	font-size: 21px;
+}
+
+
+/* CSS Style */
+a, a:hover, a:focus{
+	color:#CD5D2B;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+/* Fons Web  i amplades */ 
+.estiula {
+	max-width: 990px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.carrusel {
+	max-width: 961px;	
+}
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/* Modificadors de Style */
+.img-thumbnail {
+	padding: 0px; 
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+.taronja {
+	color: #CD5D2B;
+}
+.subratllar {
+ text-decoration: underline;
+}
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.activitats {
+	padding: 25px;
+}
+.activitatsMain {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.left {
+	float:left;
+}
+.circuits {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/* Part Central de la Web */ 
+.col-centre {
+	background: url("../img/fons_text_PORTADA.jpg") repeat-y center top;
+	box-shadow: 1px 10px 10px 10px #343434;
+}
+.col-centre-portada {
+	min-height: 1452px;
+}
+.col-centre-petit {
+	min-height: 1172px;
+}
+.col-centre-tarifes {
+	min-height: 968px;
+}
+.col-centre-activitats {
+	min-height: 1046px;
+}
+.col-centre-tiquet {
+	min-height: 1300px;
+}
+.col-centre-circuits {
+	min-height: 860px;
+}
+.col-centre-faq {
+	min-height: 1552px;
+}
+.marge-top {
+	padding-top: 50px;
+}
+.marge-bottom {
+	padding-bottom: 180px;
+}
+.marge-bottom-circuits {
+	padding-bottom: 123px;
+}
+.marge-bottom-tarifa {
+	padding-bottom: 230px;
+}
+.marge-bottom-inici1 {
+	padding-bottom: 50px;
+}
+.marge-bottom-inici2 {
+	padding-bottom: 250px;
+}
+.marge-bottom-inici3 {
+	padding-bottom: 230px;
+}
+.marge-bottom-inici4 {
+	padding-bottom: 95px;
+}
+.marge-bottom-inici4 {
+	padding-bottom: 78px;
+}
+.titol {
+	box-shadow: 5px 5px 5px 5px #343434;
+}
+.banner {
+	padding-left: 25px;
+}
+
+.paddInterior {
+	padding-top: 35px;
+}
+.paddInteriorMig {
+	padding-top: 65px;
+	font-size: 25px;
+}
+.paddInteriorPetit {
+	padding-top: 25px;
+}
+.paddInteriorXs {
+	padding-top: 15px;
+}
+.fontTextLlarg {
+	font-size: 20px;
+}
+.fontTextFAQ {
+	font-size: 21px;
+}
+.fontTextCircuit {
+	font-size: 17px;
+}
+
+/* nav BAR*/
+.navbar {
+
+	margin-bottom: 0px;
+	border: 1px solid transparent;
+	font-family:WC_RoughTrad;
+}
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: black;
+	font-size: 23px;
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus
+	{
+	color: black;
+	background-color: #CD5D2B;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+	background-color: #CD5D2B;
+	color: #black;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #black;
+}
+.dropdown-menu>li>a {
+display: block;
+padding: 3px 20px;
+clear: both;
+font-weight: 400;
+line-height: 1.42857143;
+color: #CD5D2B;
+white-space: nowrap;
+}
