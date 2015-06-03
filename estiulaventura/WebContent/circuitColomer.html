@@ -4,38 +4,51 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EstiulAventura</title>
+<meta property="og:locale" content="ca_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Circuits | Estiulaventura" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="http://www.estiulaventura.cat/" />
+<meta property="og:site_name" content="Estiulaventura" />
+<meta property="article:publisher" content="https://www.facebook.com/estiulaventura" />
+<meta property="og:image" content="http://www.costabravaparcaventura.com/img/logoEstiulaventura.png" />
+<title> Circuits | Estiulaventura</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/estiula.css" rel=stylesheet type="text/css">
-<script	src="js/angular.min.js"></script>
-<script	src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap-tpls-0.12.0.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="http://assets.cookieconsent.silktide.com/current/style.min.css"/>
+<script type="text/javascript" src="http://assets.cookieconsent.silktide.com/current/plugin.min.js"></script>
+<script src="js/cookies.js"></script>
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
 	<div back-img="{{tab.background}}">
 		<div class="estiula container-fluid">
-			<div ng-init="tab.setTab(11)" ng-include="'navigation.html'"></div>
+			<!-- 			<div class="row" ng-include="'banner.html'"></div> -->
+			<div ng-init="tab.setTab(10)"
+				ng-include="'navigation.html'"></div>
 			<div ng-controller="CarouselDemoCtrl">
 				<carousel interval="myInterval"> <slide
-					ng-repeat="slide in tab.galleryTosca" active="slide.active"> <img
+					ng-repeat="slide in tab.galleryColomer" active="slide.active"> <img
 					ng-src="{{slide.src}}" class=" img-responsiv img-thumbnail">
 				</slide> </carousel>
 			</div>
 			<div  class="{{tab.fons}} col-centre row ">
 				<img class="titol img-responsive"
-					src="img/circuits/titols/titol_BLAU_LA_TOSCA.jpg">
+					src="img/circuits/titols/titol_VERD_EL_PETIT_COLOMER.jpg">
 				<div class="col-lg-11 col-md-11 col-sm-11">
 					<div
 						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-						<p class="paddInteriorPetit fontTextCircuit swiss">Els adults i els nens m&eacute;s alts de 1,30
-							m. Sempre començaran per aquest circuit d&#39;iniciaci&oacute;
-							tant d&#39;al&ccedil;ada com de dificultat. Un cop equipats, els
-							monitors us explicaran la normativa i el funcionament de les
-							instal&middot;lacions i sereu vosaltres mateixos qui, de forma
-							aut&ograve;noma, anireu progressant al llarg del recorregut.
-							Sempre sota la supervisi&oacute; d&#39;algun dels monitors.</p>
-						
+						<p class="paddInteriorPetit fontTextCircuit swiss">Aquest circuit est&agrave; pensat per a nens
+							i nenes de tres anys i fins al 1,30 m d&#39;al&ccedil;ada. Consta
+							de 13 jocs com per exemple tirolines, ponts penjant, xarxes...
+							Els monitors us explicaran el funcionament de les
+							instal&middot;lacions i seran els pares qui des del terra aniran
+							acompanyant els infants (Acc&eacute;s gratu&iuml;t per als
+							pares).</p>
 						<p class="fontTextCircuit timoteo">Els Jocs del Circuit</p>
 					</div>
 				</div>
@@ -44,25 +57,24 @@
 						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
 
 						<ul class="fontTextCircuit swiss">
-							<li>Pont d&#39;acordi&oacute;</li>
-							<li>Pont nepal&egrave;s</li>
-							<li>Pont de cordes</li>
-							<li>Xarxa plana</li>
-							<li>Gronxadors</li>
-							<li>Liana</li>
-							<li>Pont de mico</li>
-							<li>Travessa infernal</li>
-							<li>Pont tibet&agrave;</li>
-							<li>Pont de plataformes</li>
+							<li>Pont de fusta</li>
+							<li>Pont Indiana Jones</li>
+							<li>Troncs clavats</li>
 							<li>Xarxa aranya</li>
-							<li>Troncs rodants</li>
-							<li>Tirolina final 1(baixa) o 2 (alta)</li>
+							<li>Tirolina</li>
+							<li>Biga penjant</li>
+							<li>Xarxa en U</li>
+							<li>Cistelleta voladora</li>
+							<li>Pont nepal&egrave;s</li>
+							<li>Xarxa plana</li>
+							<li>Pont gronxadors</li>
+							<li>Pont de plataformes</li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
 					<img style="max-width: 100%"
-						src="//cdn.thinglink.me/api/image/599921975271358466/1024/10/scaletowidth#tl-599921975271358466;1043138249'"
+						src="//cdn.thinglink.me/api/image/611964220661039106/1024/10/scaletowidth#tl-611964220661039106;1043138249'"
 						class="alwaysThinglink" />
 					<script async charset="utf-8" src="//cdn.thinglink.me/jse/embed.js"></script>
 				</div>
@@ -78,23 +90,23 @@
 						class="row-fluid col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
 						<ul class="fontTextCircuit swiss">
 							<li>Numero de jocs: 13</li>
-							<li>Alçada plataformes: entre 2 i 8 metres</li>
-							<li>Longitud total circuit: 210 metres </li>
-							<li>A partir de: 1,30 m d&#39;al&ccedil;ada</li>
-							<li>Dificultat: mitjana/baixa</li>
-							<li>Durada: 35 minuts</li>
+							<li>Alçada plataformes: entre 1 i 1,5 metres</li>
+							<li>Longitud total circuit: 190 metres</li>
+							<li>A partir de: 3 anys i fins a 1,30 m d&#39;al&ccedil;ada</li>
+							<li>Dificultat: baixa</li>
+							<li>Durada: 30 minuts</li>
 						</ul>
 					</div>
 				</div>
 				<div class=" col-lg-5 col-md-5 col-sm-5"
 					ng-controller="ModalDemoCtrl">
 					<div class="thumbnail row">
-						<a ng-repeat="photo in tab.toscaImgRow1"
+						<a ng-repeat="photo in tab.colomerImgRow1"
 							class="col-lg-4 col-md-4 col-sm-4" href><img
 							src="{{ photo.src }}" ng-click="open(photo)"></a>
 					</div>
 					<div class="thumbnail row">
-						<a ng-repeat="photo in tab.toscaImgRow2"
+						<a ng-repeat="photo in tab.colomerImgRow2"
 							class="col-lg-4 col-md-4 col-sm-4" href><img
 							src="{{ photo.src }}" ng-click="open(photo)"></a>
 					</div>

@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:locale" content="ca_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Estiulaventura" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="http://www.estiulaventura.cat/" />
+<meta property="og:site_name" content="Estiulaventura" />
+<meta property="article:publisher" content="https://www.facebook.com/estiulaventura" />
+<meta property="og:image" content="http://www.costabravaparcaventura.com/img/logoEstiulaventura.png" />
 <title>EstiulAventura</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -14,53 +22,7 @@
 <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 <link rel="stylesheet" type="text/css" href="http://assets.cookieconsent.silktide.com/current/style.min.css"/>
 <script type="text/javascript" src="http://assets.cookieconsent.silktide.com/current/plugin.min.js"></script>
-<script type="text/javascript">
-// <![CDATA[
-cc.initialise({
-	cookies: {
-		analytics: {}
-	},
-	settings: {
-		consenttype: "implicit",
-		bannerPosition: "bottom"
-	},
-	strings: {
-		preferenceAlways: 'Sempre acceptar',
-		preferenceNever: 'Mai acceptar',
-		preferenceAsk: 'Pregunta-m\'ho cada cop',
-		backToSiteSettings: 'Tornar a la configuració',
-		allSitesSettingsDialogTitleB: 'Per a tota la web',
-		allSitesSettingsDialogTitleA: 'Configuració de la privacitat',
-		allSitesSettingsDialogSubtitle: 'Accepto les cookies de tota la web, que utilitzi aquest plugin',
-		preferenceDecline: 'Rebutjar',
-		preferenceConsent: 'Acceptar',
-		preferenceUseGlobal: 'Utilitzar configuració general',
-		notUsingCookies: 'Aquesta web no utilitza cookies',
-		changeForAllSitesLink: 'Canviar la configuració per a tota la web',
-		privacySettingsDialogTitleB: 'per aquesta web',
-		privacySettingsDialogTitleA: 'Configuració de la privacitat',
-		privacySettings: 'Configuració cookies',
-		analyticsDefaultTitle: 'Analítics',
-		analyticsDefaultDescription: 'De forma anònima recollim com navegas per aquesta web per millora-ne la teva experiència d,\'usuari.',
-		seeDetails: '+ info',
-		hideDetails: 'amaga els detalls',
-		allowCookies: 'Permet cookies',
-		allowCookiesImplicit: 'Tanca',
-		allowForAllSites: 'Permetre per tota la web',
-		savePreference: 'Desa preferències ',
-		saveForAllSites: 'Desa per tota la web',
-		customCookie: 'Aquesta web utilitza un tipus ,de cookies per les quals és ne,cessari la teva aprovació',
-		notificationTitle: 'La teva experiència d\'usuari, en aquesta web, millora si permets l\'ús de cookies.',
-		notificationTitleImplicit: 'Utilitzem cookies per assegurar la millor experiència de la nostra web',
-		closeWindow: 'Tancar finestra',
-		learnMore: '+ info'
-	}
-});
-// ]]>
-</script>
-<!-- End Cookie Consent plugin -->
-
-
+<script src="js/cookies.js"></script>
 </head>
 <body ng-app="EstiulaAventura" ng-controller="TabController as tab">
 	<div back-img="{{tab.background}}">
@@ -179,22 +141,6 @@ cc.initialise({
 		ga('create', 'UA-52510623-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '344476169033089',
-      xfbml      : true,
-      version    : 'v2.3'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+	
 </body>
 </html>
