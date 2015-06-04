@@ -219,3 +219,8 @@ line-height: 1.42857143;
 color: #CD5D2B;
 white-space: nowrap;
 }
+.footer {
+	height: 426px;
+	background: url("../img/peu_pagina.jpg") repeat-y center top;
+	box-shadow: 1px 10px 10px 10px #343434;
+}
