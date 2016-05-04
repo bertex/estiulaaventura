@@ -60,6 +60,8 @@
 
 		this.galleryTosca = [ { src:"img/gallery/circuits/tosca2.jpg"} ];
 
+		this.galleryAguila = [ { src:"img/gallery/circuits/tirolina_gran.jpg"} ];
+
 		this.galleryBauma = [
 		                     { src:"img/gallery/circuits/bauma1.jpg"},
 		                     { src:"img/gallery/circuits/bauma2.jpg"} ];
@@ -186,12 +188,12 @@
 	app.controller('DropdownCtrl', function ($scope, $log) {
 		/* definicio dels menus dropdown. link i titol*/
 		$scope.inici = [
-		                {src:'quisom.html', desc:'Qui Som?'},
+		                {src:'quisom.html', desc:'Qui som?'},
 		                {src:'aquivadirigit.html', desc: 'A qui va dirigit?'},
 		                {src:'onsom.html', desc:'On som?'},
 		                {src:'seguretat.html', desc:'Seguretat'},
 		                {src:'compromis.html', desc:'Compromís ecològic'},
-		                {src:'faq.html', desc:'Preguntes Freqüents'}
+		                {src:'faq.html', desc:'Preguntes freqüents'}
 		                ];
 		$scope.tarifes = [
 		                  {src:'horaris.html', desc:'Horaris i Calendari 2016 '},
