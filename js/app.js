@@ -196,7 +196,7 @@
 		                {src:'faq.html', desc:'Preguntes freqüents'}
 		                ];
 		$scope.tarifes = [
-		                  {src:'horaris.html', desc:'Horaris i Calendari 2016 '},
+		                  {src:'horaris.html', desc:'Horaris i Calendari 2017 '},
 		                  {src:'tarifes.html', desc: 'Tarifes '},
 		                  {src:'tiquetRegal.html', desc:'Tiquet Regal'}
 		                  ];
